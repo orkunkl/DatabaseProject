@@ -3,11 +3,16 @@ package controllers
 import akka.actor.ActorSystem
 import javax.inject._
 
+import DAO.DatabaseController
 import models.User
 import play.api._
 import play.api.data.Form
 import play.api.mvc._
 import play.api.data.Forms._
+import play.api.i18n.{I18nSupport, MessagesApi}
+import views.html.index
+import views.viewForms.userAuthForm
+
 import scala.concurrent.{ExecutionContext, Future, Promise}
 import scala.concurrent.duration._
 
@@ -22,26 +27,67 @@ import scala.concurrent.duration._
  * asynchronous code.
  */
 @Singleton
-class AsyncController @Inject() (actorSystem: ActorSystem)(implicit exec: ExecutionContext) extends Controller {
+class AsyncController @Inject() (actorSystem: ActorSystem, DatabaseController: DatabaseController,
+                                 implicit val  messagesApi: MessagesApi)(implicit exec: ExecutionContext) extends Controller with I18nSupport {
 
-  val userAuthForm = Form(
+  /**
+    *
+    *   USER AUTHENTICATION
+    *
+    * */
+  val userAuth = Form(
     mapping(
       "username" -> nonEmptyText,
       "password" -> nonEmptyText
-    )(User.apply)(User.unapply)
+    )(userAuthForm.apply)(userAuthForm.unapply)
   )
-  def SignInNewUser = Action.async {
-    Future(Ok(""))
-  }
-  def authenticate = Action.async { implicit request =>
-    request.session.get("account_id").map{ account_id =>
-
-    }.getOrElse(
-      Ok(views.html.index())
+  def signInNewUser = Action.async(parse.form(userAuth)) { implicit request =>
+    userAuth.bindFromRequest.fold (
+      formWithErrors => {
+        // binding failure, you retrieve the form containing errors:
+        Future(BadRequest(""))
+      },
+      userCredentials => {
+        /* binding success, you get the actual value. */
+        DatabaseController.addNewUser(User(None, userCredentials.username, userCredentials.password, 0)).map { user =>
+          Redirect(routes.AsyncController.landing).withSession("accountID" -> user.toString, "username" -> user.username)
+        }
+      }
     )
-    Future(Ok("lol"))
-
   }
+
+  def logInUser = Action.async(parse.form(userAuth)){ implicit request =>
+    userAuth.bindFromRequest.fold(
+      formWithErrors => Future(Ok("form errors")),
+      userCredentials => {
+        DatabaseController.searchUser(userCredentials.username).map {
+          _ match {
+            case None => Ok("username not found")
+            case Some(user) => {
+              if(userCredentials.password == user.password){
+                Redirect(routes.AsyncController.landing).withSession("accountID" -> user.toString, "username" -> user.username)
+              }
+              else {
+                Ok("password incorrect")
+              }
+            }
+          }
+        }
+      }
+    )
+  }
+
+  def landing = Action.async { implicit request =>
+
+    val result = for {
+      account_id <- request.session.get("account_id")
+      username <-  request.session.get("username")
+    } yield {
+      Future(Ok("")) // INTRO
+    }
+    result.getOrElse(Future(Ok(views.html.index(views.html.landing(userAuth, userAuth)))))
+  }
+
   def message = Action.async {
     getFutureMessage(1.second).map { msg => Ok(msg) }
   }

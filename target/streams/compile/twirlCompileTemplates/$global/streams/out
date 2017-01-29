@@ -1,4 +1,4 @@
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:10: Expected '}' but found 'EOF'[0m
-[0m[[31merror[0m] [0m    @b3.number(gameroom("villager"), '_label -> "Villager", 'placeholder -> "enter", '_required -> "true")[0m
-[0m[[31merror[0m] [0m                                                                                                          ^[0m
+[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/landing.scala.html:7: Invalid '@' symbol[0m
+[0m[[31merror[0m] [0m    @[0m
+[0m[[31merror[0m] [0m    ^[0m
 [0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

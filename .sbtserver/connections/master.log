@@ -1,19 +1,10 @@
-New log file opened at Sun Jan 29 15:01:28 CET 2017 by 10183@orkun-pc
-Taking next connection to: 42626
-New client attempting to connect on port: 43412-42626
-  Address = /127.0.1.1:42626
-This client on port 43412 has uuid abe579d4-439b-4bd9-91aa-edcd68d46035 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-abe579d4-439b-4bd9-91aa-edcd68d46035
-Taking next connection to: 42626
+New log file opened at Sun Jan 29 17:16:29 CET 2017 by 19381@orkun-pc
+Taking next connection to: 35943
+New client attempting to connect on port: 42660-35943
+  Address = /127.0.1.1:35943
+This client on port 42660 has uuid e95742cd-d374-4fc1-bf74-a7913dc8cf8e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-e95742cd-d374-4fc1-bf74-a7913dc8cf8e
+Taking next connection to: 35943
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 42626
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 42626
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 42626
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 42626
+Taking next connection to: 35943

@@ -14,7 +14,7 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[String,Html,play.twirl.api.HtmlFormat.Appendable] {
+class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[String,Html,Messages,play.twirl.api.HtmlFormat.Appendable] {
 
   /*
  * This template is called from the `index` template. This template
@@ -22,12 +22,12 @@ class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  */
-  def apply/*7.2*/(title: String)(content: Html):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*7.2*/(title: String)(content: Html)(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*7.32*/("""
+Seq[Any](format.raw/*7.61*/("""
 
 """),format.raw/*9.1*/("""<!DOCTYPE html>
 <html lang="en">
@@ -40,17 +40,19 @@ Seq[Any](format.raw/*7.32*/("""
     </head>
     <body>
         """),format.raw/*20.32*/("""
-        """),_display_(/*21.10*/content),format.raw/*21.17*/("""
-    """),format.raw/*22.5*/("""</body>
+        """),format.raw/*21.9*/("""<div class="container">
+            """),_display_(/*22.14*/content),format.raw/*22.21*/("""
+        """),format.raw/*23.9*/("""</div>
+    </body>
 </html>
 """))
       }
     }
   }
 
-  def render(title:String,content:Html): play.twirl.api.HtmlFormat.Appendable = apply(title)(content)
+  def render(title:String,content:Html,messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(title)(content)(messages)
 
-  def f:((String) => (Html) => play.twirl.api.HtmlFormat.Appendable) = (title) => (content) => apply(title)(content)
+  def f:((String) => (Html) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (title) => (content) => (messages) => apply(title)(content)(messages)
 
   def ref: this.type = this
 
@@ -68,11 +70,11 @@ Seq[Any](format.raw/*7.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Sat Jan 28 16:31:27 CET 2017
+                  DATE: Sun Jan 29 16:32:03 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/main.scala.html
-                  HASH: b3310cc09ef09add3f7262f9b2cc640f61a6e3c3
-                  MATRIX: 784->260|909->290|937->292|1017->397|1053->406|1088->414|1114->419|1203->481|1218->487|1281->528|1369->589|1384->595|1445->634|1497->659|1512->665|1574->706|1668->862|1705->872|1733->879|1765->884
-                  LINES: 25->7|30->7|32->9|35->12|36->13|36->13|36->13|37->14|37->14|37->14|38->15|38->15|38->15|39->16|39->16|39->16|42->20|43->21|43->21|44->22
+                  HASH: 29a3a10918e7e670b5817b357eea88ada4f47d68
+                  MATRIX: 793->260|947->319|975->321|1055->426|1091->435|1126->443|1152->448|1241->510|1256->516|1319->557|1407->618|1422->624|1483->663|1535->688|1550->694|1612->735|1706->891|1742->900|1806->937|1834->944|1870->953
+                  LINES: 25->7|30->7|32->9|35->12|36->13|36->13|36->13|37->14|37->14|37->14|38->15|38->15|38->15|39->16|39->16|39->16|42->20|43->21|44->22|44->22|45->23
                   -- GENERATED --
               */
           

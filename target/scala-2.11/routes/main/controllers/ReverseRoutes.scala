@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Sun Jan 29 15:01:34 CET 2017
+// @DATE:Sun Jan 29 16:32:03 CET 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -9,7 +9,7 @@ import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamic
 
 import _root_.controllers.Assets.Asset
 
-// @LINE:8
+// @LINE:10
 package controllers {
 
   // @LINE:10
@@ -19,7 +19,25 @@ package controllers {
     }
 
   
+    // @LINE:14
+    def signInNewUser(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "signin")
+    }
+  
+    // @LINE:16
+    def logInUser(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "login")
+    }
+  
     // @LINE:10
+    def landing(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix)
+    }
+  
+    // @LINE:12
     def message(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "message")
@@ -27,32 +45,17 @@ package controllers {
   
   }
 
-  // @LINE:13
+  // @LINE:18
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:13
+    // @LINE:18
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
-    }
-  
-  }
-
-  // @LINE:8
-  class ReverseCountController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:8
-    def count(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "count")
     }
   
   }

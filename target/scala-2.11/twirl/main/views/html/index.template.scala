@@ -14,18 +14,18 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Html,play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Html,Messages,play.twirl.api.HtmlFormat.Appendable] {
 
   /*
  * This template takes a single argument, a String containing a
  * message to display.
  */
-  def apply/*5.2*/(content: Html):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*5.2*/(content: Html)(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*5.17*/("""
+Seq[Any](format.raw/*5.46*/("""
 
 """),format.raw/*11.4*/("""
 """),_display_(/*12.2*/main("Welcome to Play")/*12.25*/ {_display_(Seq[Any](format.raw/*12.27*/("""
@@ -39,9 +39,9 @@ Seq[Any](format.raw/*5.17*/("""
     }
   }
 
-  def render(content:Html): play.twirl.api.HtmlFormat.Appendable = apply(content)
+  def render(content:Html,messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(content)(messages)
 
-  def f:((Html) => play.twirl.api.HtmlFormat.Appendable) = (content) => apply(content)
+  def f:((Html) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (content) => (messages) => apply(content)(messages)
 
   def ref: this.type = this
 
@@ -57,10 +57,10 @@ Seq[Any](format.raw/*5.17*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 29 15:01:35 CET 2017
+                  DATE: Sun Jan 29 16:06:20 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/index.scala.html
-                  HASH: b9a9efe274743da2681012bf99382e8e74aa5d5b
-                  MATRIX: 614->95|724->110|753->306|781->308|813->331|853->333|886->462|918->468|946->475|979->478
+                  HASH: 71b8e30a18918aad5f19a81aa47ea6fb13762316
+                  MATRIX: 623->95|762->139|791->335|819->337|851->360|891->362|924->491|956->497|984->504|1017->507
                   LINES: 23->5|28->5|30->11|31->12|31->12|31->12|33->17|34->18|34->18|36->20
                   -- GENERATED --
               */

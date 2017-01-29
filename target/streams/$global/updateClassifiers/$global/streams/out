@@ -594,6 +594,22 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default]
+[info] Resolving com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 ...
+[debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
+[debug] sbt-chain: module revision found in cache: com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12
+[debug] 	found com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 in sbt-chain
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
 [info] Resolving com.google.guava#guava;19.0 ...
 [debug] sbt-chain: Checking cache for: dependency: com.google.guava#guava;19.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
@@ -1684,6 +1700,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
@@ -2548,6 +2576,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
@@ -3418,6 +3458,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
@@ -4280,6 +4332,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
@@ -5384,6 +5448,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test->compile]
@@ -6503,6 +6579,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
@@ -7369,6 +7457,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile-internal->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile-internal->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile-internal->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile-internal->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile-internal->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile-internal->compile]
@@ -8237,6 +8337,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
@@ -9101,6 +9213,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
@@ -9966,6 +10090,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime-internal->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime-internal->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime-internal->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime-internal->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime-internal->compile]
@@ -10841,6 +10977,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [compile->compile]
@@ -11711,6 +11859,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [runtime->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [runtime->compile]
@@ -12735,6 +12895,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test->compile]
@@ -13929,6 +14101,18 @@
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test-internal->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test-internal->compile(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->default]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->default(compile)]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->runtime]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->compile]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->master]
+[debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [test-internal->master]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test-internal->compile]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test-internal->runtime(*)]
 [debug] == resolving dependencies databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT->com.google.guava#guava;19.0 [test-internal->compile]
@@ -15594,13 +15778,7 @@
 [debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.2!httpclient.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.11;2.5.12!play-jdbc_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-streams_2.11;2.5.12!play-streams_2.11.jar(src)
-[debug] 		tried /home/orkun/.ivy2/local/com.typesafe.play/play-java_2.11/2.5.6/srcs/play-java_2.11-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.5.6/play-java_2.11-2.5.6-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.5.6/play-java_2.11-2.5.6-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.5.6/play-java_2.11-2.5.6-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.5.6/play-java_2.11-2.5.6-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.5.6/play-java_2.11-2.5.6-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-java_2.11;2.5.6!play-java_2.11.jar(src) (1688ms)
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-java_2.11;2.5.6!play-java_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.7.8!jackson-core.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-functional_2.11;2.5.12!play-functional_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.21!slf4j-api.jar(src)
@@ -15639,6 +15817,13 @@
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.5.12!play-cache_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-ws_2.11;2.5.12!play-ws_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.7!scala-library.jar(src)
+[debug] 		tried /home/orkun/.ivy2/local/com.typesafe.play/play-jdbc-evolutions_2.11/2.5.12/srcs/play-jdbc-evolutions_2.11-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.11/2.5.12/play-jdbc-evolutions_2.11-2.5.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.11/2.5.12/play-jdbc-evolutions_2.11-2.5.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.11/2.5.12/play-jdbc-evolutions_2.11-2.5.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.11/2.5.12/play-jdbc-evolutions_2.11-2.5.12-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.11/2.5.12/play-jdbc-evolutions_2.11-2.5.12-sources.jar
+[info] 	[SUCCESSFUL ] com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12!play-jdbc-evolutions_2.11.jar(src) (7846ms)
 [debug] 	[NOT REQUIRED] com.google.guava#guava;19.0!guava.jar(src)
 [debug] 	[NOT REQUIRED] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe#ssl-config-core_2.11;0.2.1!ssl-config-core_2.11.jar(src)
@@ -15646,13 +15831,7 @@
 [debug] 	[NOT REQUIRED] net.jodah#typetools;0.4.4!typetools.jar(src)
 [debug] 	[NOT REQUIRED] org.postgresql#postgresql;9.4.1212.jre7!postgresql.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-transport-native-epoll;4.0.42.Final!netty-transport-native-epoll.jar
-[debug] 		tried /home/orkun/.ivy2/local/com.typesafe.play/filters-helpers_2.11/2.5.6/srcs/filters-helpers_2.11-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.5.6/filters-helpers_2.11-2.5.6-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.5.6/filters-helpers_2.11-2.5.6-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.5.6/filters-helpers_2.11-2.5.6-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.5.6/filters-helpers_2.11-2.5.6-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.5.6/filters-helpers_2.11-2.5.6-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#filters-helpers_2.11;2.5.6!filters-helpers_2.11.jar(src) (155ms)
+[debug] 	[NOT REQUIRED] com.typesafe.play#filters-helpers_2.11;2.5.6!filters-helpers_2.11.jar(src)
 [debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.6!joda-time.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.4.14!akka-actor_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar(src)
@@ -15668,13 +15847,7 @@
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-netty-utils;2.5.12!play-netty-utils.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.slick#slick_2.11;3.1.0!slick_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.google.inject#guice;4.0!guice.jar(src)
-[debug] 		tried /home/orkun/.ivy2/local/org.webjars/bootstrap/3.3.7-1/srcs/bootstrap-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.7-1/bootstrap-3.3.7-1-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.7-1/bootstrap-3.3.7-1-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.7-1/bootstrap-3.3.7-1-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.7-1/bootstrap-3.3.7-1-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.7-1/bootstrap-3.3.7-1-sources.jar
-[info] 	[SUCCESSFUL ] org.webjars#bootstrap;3.3.7-1!bootstrap.jar(src) (127ms)
+[debug] 	[NOT REQUIRED] org.webjars#bootstrap;3.3.7-1!bootstrap.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-stm#scala-stm_2.11;0.7!scala-stm_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-handler;4.0.42.Final!netty-handler.jar(src)
@@ -15697,32 +15870,14 @@
 [debug] 	[NOT REQUIRED] io.netty#netty-transport;4.0.42.Final!netty-transport.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.3.0!config.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-slf4j_2.11;2.4.14!akka-slf4j_2.11.jar(src)
-[debug] 		tried /home/orkun/.ivy2/local/com.adrianhurt/play-bootstrap_2.11/1.1-P25-B3/srcs/play-bootstrap_2.11-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap_2.11/1.1-P25-B3/play-bootstrap_2.11-1.1-P25-B3-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap_2.11/1.1-P25-B3/play-bootstrap_2.11-1.1-P25-B3-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap_2.11/1.1-P25-B3/play-bootstrap_2.11-1.1-P25-B3-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap_2.11/1.1-P25-B3/play-bootstrap_2.11-1.1-P25-B3-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap_2.11/1.1-P25-B3/play-bootstrap_2.11-1.1-P25-B3-sources.jar
-[info] 	[SUCCESSFUL ] com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3!play-bootstrap_2.11.jar(src) (152ms)
+[debug] 	[NOT REQUIRED] com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3!play-bootstrap_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-iteratees_2.11;2.5.12!play-iteratees_2.11.jar(src)
 [debug] 	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-common;4.0.42.Final!netty-common.jar(src)
 [debug] 	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.0!reactive-streams.jar(src)
 [debug] 	[NOT REQUIRED] org.asynchttpclient#netty-resolver-dns;2.0.24!netty-resolver-dns.jar(src)
-[debug] 		tried /home/orkun/.ivy2/local/org.webjars/jquery/2.2.4/srcs/jquery-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/webjars/jquery/2.2.4/jquery-2.2.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/webjars/jquery/2.2.4/jquery-2.2.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/webjars/jquery/2.2.4/jquery-2.2.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/webjars/jquery/2.2.4/jquery-2.2.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/webjars/jquery/2.2.4/jquery-2.2.4-sources.jar
-[info] 	[SUCCESSFUL ] org.webjars#jquery;2.2.4!jquery.jar(src) (128ms)
-[debug] 		tried /home/orkun/.ivy2/local/com.adrianhurt/play-bootstrap-core_2.11/1.1-P25/srcs/play-bootstrap-core_2.11-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap-core_2.11/1.1-P25/play-bootstrap-core_2.11-1.1-P25-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap-core_2.11/1.1-P25/play-bootstrap-core_2.11-1.1-P25-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap-core_2.11/1.1-P25/play-bootstrap-core_2.11-1.1-P25-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap-core_2.11/1.1-P25/play-bootstrap-core_2.11-1.1-P25-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/adrianhurt/play-bootstrap-core_2.11/1.1-P25/play-bootstrap-core_2.11-1.1-P25-sources.jar
-[info] 	[SUCCESSFUL ] com.adrianhurt#play-bootstrap-core_2.11;1.1-P25!play-bootstrap-core_2.11.jar(src) (223ms)
+[debug] 	[NOT REQUIRED] org.webjars#jquery;2.2.4!jquery.jar(src)
+[debug] 	[NOT REQUIRED] com.adrianhurt#play-bootstrap-core_2.11;1.1-P25!play-bootstrap-core_2.11.jar(src)
 [debug] 	[NOT REQUIRED] oauth.signpost#signpost-commonshttp4;1.2.1.2!signpost-commonshttp4.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-client;9.2.15.v20160210!websocket-client.jar(src)
@@ -15811,7 +15966,7 @@
 [debug] 	[NOT REQUIRED] com.typesafe.play#twirl-compiler_2.11;1.1.1!twirl-compiler_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.6!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar(src)
-[debug] :: resolution report :: resolve 2774ms :: artifacts dl 3388ms
+[debug] :: resolution report :: resolve 4205ms :: artifacts dl 9200ms
 [debug] 	report for databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT compile produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject$sources_2.11-compile.xml
 [debug] 	report for databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT runtime produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject$sources_2.11-runtime.xml
 [debug] 	report for databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT test produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject$sources_2.11-test.xml
@@ -15826,4 +15981,4 @@
 [debug] 	report for databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT pom produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject$sources_2.11-pom.xml
 [debug] 	report for databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT scala-tool produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject$sources_2.11-scala-tool.xml
 [debug] 	report for databaseproject#databaseproject$sources_2.11;1.0-SNAPSHOT fork-run produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject$sources_2.11-fork-run.xml
-[debug] 	resolve done (2774ms resolve - 3388ms download)
+[debug] 	resolve done (4205ms resolve - 9200ms download)

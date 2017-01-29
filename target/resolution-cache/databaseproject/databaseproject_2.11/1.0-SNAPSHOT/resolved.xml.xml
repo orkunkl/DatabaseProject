@@ -4,7 +4,7 @@
 		module="databaseproject_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170129150524"
+		publication="20170129171736"
 	>
 		<description>
 		databaseProject
@@ -45,6 +45,7 @@
 		<dependency org="com.typesafe.play" name="play-jdbc_2.11" rev="2.5.12" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.5.12" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.5.12" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-jdbc-evolutions_2.11" rev="2.5.12" conf="compile->default(compile)"/>
 		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.11" rev="1.5.1" conf="test->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-slick_2.11" rev="2.0.2" conf="compile->default(compile)"/>
 		<dependency org="org.postgresql" name="postgresql" rev="9.4.1212.jre7" conf="compile->default(compile)"/>

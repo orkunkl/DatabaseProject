@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Sun Jan 29 15:01:34 CET 2017
+// @DATE:Sun Jan 29 16:32:03 CET 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -10,7 +10,7 @@ import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamic
 
 import _root_.controllers.Assets.Asset
 
-// @LINE:8
+// @LINE:10
 package controllers.javascript {
   import ReverseRouteContext.empty
 
@@ -22,7 +22,37 @@ package controllers.javascript {
     }
 
   
+    // @LINE:14
+    def signInNewUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AsyncController.signInNewUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "signin"})
+        }
+      """
+    )
+  
+    // @LINE:16
+    def logInUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AsyncController.logInUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+        }
+      """
+    )
+  
     // @LINE:10
+    def landing: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AsyncController.landing",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:12
     def message: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AsyncController.message",
       """
@@ -34,7 +64,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:13
+  // @LINE:18
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -42,32 +72,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:18
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
         function(file1) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[Asset]].javascriptUnbind + """)("file", file1)})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:8
-  class ReverseCountController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:8
-    def count: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CountController.count",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "count"})
         }
       """
     )

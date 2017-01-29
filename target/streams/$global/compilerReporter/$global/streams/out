@@ -1,20 +1,5 @@
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/controllers/AsyncController.scala:37: not enough arguments for method apply: (content: play.twirl.api.Html)play.twirl.api.HtmlFormat.Appendable in class index.[0m
+[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/controllers/AsyncController.scala:55: not enough arguments for method apply: (content: play.twirl.api.Html)(implicit messages: play.api.i18n.Messages)play.twirl.api.HtmlFormat.Appendable in class index.[0m
 [0m[[31merror[0m] [0mUnspecified value parameter content.[0m
 [0m[[31merror[0m] [0m      Ok(views.html.index())[0m
 [0m[[31merror[0m] [0m                         ^[0m
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:5: value HomeController is not a member of object controllers.routes[0m
-[0m[[31merror[0m] [0m@b3.form(action = routes.HomeController.newRoom(), 'id -> "newRoom") {[0m
-[0m[[31merror[0m] [0m                         ^[0m
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:6: not found: value gameroom[0m
-[0m[[31merror[0m] [0m    @b3.text(gameroom("roomname"), '_value -> "", '_label -> "Room name", 'autofocus -> "true", '_required -> "true")[0m
-[0m[[31merror[0m] [0m             ^[0m
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:7: not found: value gameroom[0m
-[0m[[31merror[0m] [0m    @b3.password(gameroom("password"), '_value -> "", '_label -> "Password", '_required -> "true")[0m
-[0m[[31merror[0m] [0m                 ^[0m
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:9: not found: value gameroom[0m
-[0m[[31merror[0m] [0m    @b3.number(gameroom("vampire"), '_label -> "Vampire", 'placeholder -> "enter", '_required -> "true")[0m
-[0m[[31merror[0m] [0m               ^[0m
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:10: not found: value gameroom[0m
-[0m[[31merror[0m] [0m    @b3.number(gameroom("villager"), '_label -> "Villager", 'placeholder -> "enter", '_required -> "true")[0m
-[0m[[31merror[0m] [0m               ^[0m
-[0m[[31merror[0m] [0m6 errors found[0m
+[0m[[31merror[0m] [0mone error found[0m
