@@ -1,10 +1,46 @@
-New log file opened at Sun Jan 29 17:16:29 CET 2017 by 19381@orkun-pc
-Taking next connection to: 35943
-New client attempting to connect on port: 42660-35943
-  Address = /127.0.1.1:35943
-This client on port 42660 has uuid e95742cd-d374-4fc1-bf74-a7913dc8cf8e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-e95742cd-d374-4fc1-bf74-a7913dc8cf8e
-Taking next connection to: 35943
+New log file opened at Sun Jan 29 21:25:24 CET 2017 by 8493@orkun-pc
+Taking next connection to: 33733
+New client attempting to connect on port: 41490-33733
+  Address = /127.0.1.1:33733
+This client on port 41490 has uuid 6a1f3607-81a0-417a-b7f8-c64e462c6251 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-6a1f3607-81a0-417a-b7f8-c64e462c6251
+Taking next connection to: 33733
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 35943
+Taking next connection to: 33733
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 33733
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 33733
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 33733
+New client attempting to connect on port: 41616-33733
+  Address = /127.0.1.1:33733
+Handshake exception on socket: 41616
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 33733
+New client attempting to connect on port: 41618-33733
+  Address = /127.0.1.1:33733
+This client on port 41618 has uuid 94d8ce0f-087c-47ae-9ac5-1150bac9592d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-6a1f3607-81a0-417a-b7f8-c64e462c6251, play-fork-run-94d8ce0f-087c-47ae-9ac5-1150bac9592d
+Taking next connection to: 33733
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 33733
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 33733
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 33733

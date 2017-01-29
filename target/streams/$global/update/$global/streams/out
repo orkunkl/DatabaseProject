@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3fdceccf[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75fad44a[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -1196,22 +1196,82 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.5.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.webjars#webjars-play_2.11;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#webjars-play_2.11;2.5.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webjars#webjars-play_2.11;2.5.0[0m
+[0m[[0mdebug[0m] [0m	found org.webjars#webjars-play_2.11;2.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.webjars#requirejs;2.1.20 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#requirejs;2.1.20 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webjars#requirejs;2.1.20[0m
+[0m[[0mdebug[0m] [0m	found org.webjars#requirejs;2.1.20 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.webjars#webjars-locator;0.30 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#webjars-locator;0.30 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webjars#webjars-locator;0.30[0m
+[0m[[0mdebug[0m] [0m	found org.webjars#webjars-locator;0.30 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.webjars#webjars-locator-core;0.30 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#webjars-locator-core;0.30 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webjars#webjars-locator-core;0.30[0m
+[0m[[0mdebug[0m] [0m	found org.webjars#webjars-locator-core;0.30 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-compress;1.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-compress;1.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.9[0m
+[0m[[0mdebug[0m] [0m	found org.apache.commons#commons-compress;1.9 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-slick_2.11;2.0.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-slick_2.11;2.0.2 {compile=[default(compile)]}[0m
@@ -1603,6 +1663,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [compile][0m
@@ -2404,18 +2469,58 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.5.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->compile][0m
@@ -2699,6 +2804,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [runtime][0m
@@ -3501,18 +3611,58 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.5.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->compile][0m
@@ -3796,6 +3946,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.12 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.5.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.5.12 {test=[default(compile)]}[0m
@@ -5156,18 +5311,58 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.5.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->compile][0m
@@ -5451,6 +5646,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -6255,18 +6455,58 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.5.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->compile][0m
@@ -6550,6 +6790,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for databaseproject#databaseproject_2.11;1.0-SNAPSHOT [test-internal][0m
@@ -7354,18 +7599,58 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-ws_2.11;2.5.12->org.apache.httpcomponents#httpcore;4.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ws_2.11;2.5.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12->com.typesafe.play#play-jdbc-api_2.11;2.5.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#requirejs;2.1.20 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-play_2.11;2.5.0->org.webjars#webjars-locator;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.webjars#webjars-locator-core;0.30 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.slf4j#slf4j-api;1.7.21 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator-core;0.30->org.apache.commons#commons-compress;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.30->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#webjars-play_2.11;2.5.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-slick_2.11;2.0.2 [compile->compile][0m
@@ -7649,6 +7934,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3->org.webjars#jquery;2.2.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->org.webjars#bootstrap;3.3.7-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.12 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.12 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies databaseproject#databaseproject_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.12 [test->compile][0m
@@ -9167,7 +9457,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.11;2.5.12!play-jdbc_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.5.12!play-cache_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-ws_2.11;2.5.12!play-ws_2.11.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc-evolutions_2.11;2.5.12!play-jdbc-evolutions_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-play_2.11;2.5.0!webjars-play_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-slick_2.11;2.0.2!play-slick_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.postgresql#postgresql;9.4.1212.jre7!postgresql.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.adrianhurt#play-bootstrap_2.11;1.1-P25-B3!play-bootstrap_2.11.jar[0m
@@ -9248,6 +9538,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.asynchttpclient#netty-resolver;2.0.24!netty-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.asynchttpclient#netty-codec-dns;2.0.24!netty-codec-dns.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#requirejs;2.1.20!requirejs.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-locator;0.30!webjars-locator.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-locator-core;0.30!webjars-locator-core.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-compress;1.9!commons-compress.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.slick#slick_2.11;3.1.0!slick_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.slick#slick-hikaricp_2.11;3.1.0!slick-hikaricp_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
@@ -9350,7 +9644,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3481ms :: artifacts dl 67ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4638ms :: artifacts dl 203ms[0m
 [0m[[0mdebug[0m] [0m	report for databaseproject#databaseproject_2.11;1.0-SNAPSHOT compile produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for databaseproject#databaseproject_2.11;1.0-SNAPSHOT runtime produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for databaseproject#databaseproject_2.11;1.0-SNAPSHOT test produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject_2.11-test.xml[0m
@@ -9365,5 +9659,5 @@
 [0m[[0mdebug[0m] [0m	report for databaseproject#databaseproject_2.11;1.0-SNAPSHOT pom produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for databaseproject#databaseproject_2.11;1.0-SNAPSHOT scala-tool produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject_2.11-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for databaseproject#databaseproject_2.11;1.0-SNAPSHOT fork-run produced in /home/orkun/Workspace/DatabaseProject/target/resolution-cache/reports/databaseproject-databaseproject_2.11-fork-run.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3481ms resolve - 67ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (4638ms resolve - 203ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

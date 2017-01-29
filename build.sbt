@@ -10,13 +10,12 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  evolutions,
+  "org.webjars" %% "webjars-play" % "2.5.0",
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test,
   "com.typesafe.play" %% "play-slick" % "2.0.2",
   "org.postgresql" % "postgresql" % "9.4.1212.jre7",
-  "com.adrianhurt" %% "play-bootstrap" % "1.1-P25-B3"
+  "com.adrianhurt" %% "play-bootstrap" % "1.1-P25-B3",
+  "org.webjars" % "bootstrap" % "3.3.6"
 )
-
-
 
 fork in run := true

@@ -10,7 +10,6 @@ import play.api.data.Form
 import play.api.mvc._
 import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
-import views.html.index
 import views.viewForms.userAuthForm
 
 import scala.concurrent.{ExecutionContext, Future, Promise}
@@ -28,7 +27,7 @@ import scala.concurrent.duration._
  */
 @Singleton
 class AsyncController @Inject() (actorSystem: ActorSystem, DatabaseController: DatabaseController,
-                                 implicit val  messagesApi: MessagesApi)(implicit exec: ExecutionContext) extends Controller with I18nSupport {
+                                 implicit val  messagesApi: MessagesApi, webJarAssets: WebJarAssets)(implicit exec: ExecutionContext) extends Controller with I18nSupport {
 
   /**
     *
@@ -42,10 +41,14 @@ class AsyncController @Inject() (actorSystem: ActorSystem, DatabaseController: D
     )(userAuthForm.apply)(userAuthForm.unapply)
   )
   def signInNewUser = Action.async(parse.form(userAuth)) { implicit request =>
-    userAuth.bindFromRequest.fold (
+    val userCredentials = request.body
+    DatabaseController.addNewUser(User(None, userCredentials.username, userCredentials.password, 0)).map { user =>
+      Redirect(routes.AsyncController.landing).withSession("accountID" -> user.toString, "username" -> user.username)
+    }
+    /*userAuth.bindFromRequest.fold (
       formWithErrors => {
         // binding failure, you retrieve the form containing errors:
-        Future(BadRequest(""))
+        Future(Ok("aq"))
       },
       userCredentials => {
         /* binding success, you get the actual value. */
@@ -53,7 +56,7 @@ class AsyncController @Inject() (actorSystem: ActorSystem, DatabaseController: D
           Redirect(routes.AsyncController.landing).withSession("accountID" -> user.toString, "username" -> user.username)
         }
       }
-    )
+    )*/
   }
 
   def logInUser = Action.async(parse.form(userAuth)){ implicit request =>
@@ -76,18 +79,28 @@ class AsyncController @Inject() (actorSystem: ActorSystem, DatabaseController: D
       }
     )
   }
-
+  def authenticate = Action.async { implicit request =>
+    Future(Ok(views.html.index(webJarAssets, views.html.landing(userAuth, userAuth))))
+  }
   def landing = Action.async { implicit request =>
-
     val result = for {
+      account_id <- request.session.get("accountID")   //***** burası giriş
+      username <-  request.session.get("username")
+    } yield {
+      Future(Ok("afferin")) // INTRO
+    }
+    result.getOrElse(Future(Ok(views.html.index(webJarAssets, views.html.landing(userAuth, userAuth)))))
+  }
+  def mainPage = Action.async { implicit request =>
+
+    for {
       account_id <- request.session.get("account_id")
       username <-  request.session.get("username")
     } yield {
       Future(Ok("")) // INTRO
     }
-    result.getOrElse(Future(Ok(views.html.index(views.html.landing(userAuth, userAuth)))))
+    Future(Ok(""))
   }
-
   def message = Action.async {
     getFutureMessage(1.second).map { msg => Ok(msg) }
   }

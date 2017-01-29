@@ -1,5 +1,5 @@
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/controllers/AsyncController.scala:55: not enough arguments for method apply: (content: play.twirl.api.Html)(implicit messages: play.api.i18n.Messages)play.twirl.api.HtmlFormat.Appendable in class index.[0m
+[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/index.scala.html:12: not enough arguments for method apply: (webJarAssets: controllers.WebJarAssets, content: play.twirl.api.Html)(implicit messages: play.api.i18n.Messages)play.twirl.api.HtmlFormat.Appendable in class main.[0m
 [0m[[31merror[0m] [0mUnspecified value parameter content.[0m
-[0m[[31merror[0m] [0m      Ok(views.html.index())[0m
-[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m@main(webJarAssets) {[0m
+[0m[[31merror[0m] [0m     ^[0m
 [0m[[31merror[0m] [0mone error found[0m

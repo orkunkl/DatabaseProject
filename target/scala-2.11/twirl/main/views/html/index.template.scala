@@ -14,34 +14,38 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Html,Messages,play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[WebJarAssets,Html,Messages,play.twirl.api.HtmlFormat.Appendable] {
 
   /*
  * This template takes a single argument, a String containing a
  * message to display.
  */
-  def apply/*5.2*/(content: Html)(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*5.2*/(webJarAssets: WebJarAssets, content: Html)(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*5.46*/("""
+Seq[Any](format.raw/*5.74*/("""
 
 """),format.raw/*11.4*/("""
-"""),_display_(/*12.2*/main("Welcome to Play")/*12.25*/ {_display_(Seq[Any](format.raw/*12.27*/("""
+"""),_display_(/*12.2*/main(webJarAssets)/*12.20*/ {_display_(Seq[Any](format.raw/*12.22*/("""
 
-    """),format.raw/*17.8*/("""
-    """),_display_(/*18.6*/content),format.raw/*18.13*/("""
+    """),format.raw/*14.5*/("""<div class="heading">
+        <h1>¡Buenos días!</h1>
+    </div>
 
-""")))}),format.raw/*20.2*/("""
+
+    """),_display_(/*19.6*/content),format.raw/*19.13*/("""
+
+""")))}),format.raw/*21.2*/("""
 """))
       }
     }
   }
 
-  def render(content:Html,messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(content)(messages)
+  def render(webJarAssets:WebJarAssets,content:Html,messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(webJarAssets,content)(messages)
 
-  def f:((Html) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (content) => (messages) => apply(content)(messages)
+  def f:((WebJarAssets,Html) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (webJarAssets,content) => (messages) => apply(webJarAssets,content)(messages)
 
   def ref: this.type = this
 
@@ -57,11 +61,11 @@ Seq[Any](format.raw/*5.46*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 29 16:06:20 CET 2017
+                  DATE: Sun Jan 29 21:41:37 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/index.scala.html
-                  HASH: 71b8e30a18918aad5f19a81aa47ea6fb13762316
-                  MATRIX: 623->95|762->139|791->335|819->337|851->360|891->362|924->491|956->497|984->504|1017->507
-                  LINES: 23->5|28->5|30->11|31->12|31->12|31->12|33->17|34->18|34->18|36->20
+                  HASH: c253e0c8f6594c107ae13a3b311353c6f7815d5a
+                  MATRIX: 636->95|803->167|832->363|860->365|887->383|927->385|960->391|1057->462|1085->469|1118->472
+                  LINES: 23->5|28->5|30->11|31->12|31->12|31->12|33->14|38->19|38->19|40->21
                   -- GENERATED --
               */
           
