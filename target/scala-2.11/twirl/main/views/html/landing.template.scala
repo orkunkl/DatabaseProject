@@ -28,9 +28,9 @@ class landing extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,For
 
 Seq[Any](format.raw/*4.46*/("""
 
-"""),format.raw/*6.1*/("""<div class="row">
+
     """),_display_(/*7.6*/content),format.raw/*7.13*/("""
-"""),format.raw/*8.1*/("""</div>"""))
+"""))
       }
     }
   }
@@ -51,11 +51,11 @@ Seq[Any](format.raw/*4.46*/("""
 object landing extends landing_Scope0.landing_Scope1.landing
               /*
                   -- GENERATED --
-                  DATE: Mon Jan 30 15:31:35 CET 2017
+                  DATE: Mon Jan 30 17:11:42 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/landing.scala.html
-                  HASH: 43c62b08410d708bfecda42f381364ec4a734002
-                  MATRIX: 623->59|762->103|790->105|838->128|865->135|892->136
-                  LINES: 24->4|29->4|31->6|32->7|32->7|33->8
+                  HASH: 14608a58af982236a2fd5694f055da50bdc5444b
+                  MATRIX: 623->59|762->103|795->111|822->118
+                  LINES: 24->4|29->4|32->7|32->7
                   -- GENERATED --
               */
           

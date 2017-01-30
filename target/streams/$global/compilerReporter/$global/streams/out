@@ -1,7 +1,4 @@
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/login.scala.html:7: value AsyncController is not a member of object controllers.routes[0m
-[0m[[31merror[0m] [0m@b3.form(action = routes.AsyncController.logInUser) {[0m
-[0m[[31merror[0m] [0m                         ^[0m
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:7: value AsyncController is not a member of object controllers.routes[0m
-[0m[[31merror[0m] [0m@b3.form(routes.AsyncController.signInNewUser) {[0m
-[0m[[31merror[0m] [0m                ^[0m
-[0m[[31merror[0m] [0mtwo errors found[0m
+[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/controllers/PageController.scala:49: missing parameter type for expanded function ((x$2) => tweetContent(x$2))[0m
+[0m[[31merror[0m] [0m        views.html.landing(tweetContent(_))))}[0m
+[0m[[31merror[0m] [0m                                        ^[0m
+[0m[[31merror[0m] [0mone error found[0m

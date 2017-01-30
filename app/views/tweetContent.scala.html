@@ -1,8 +1,8 @@
 @import models.Tweet
+@import views.html.tweet
+
 @(tweets : List[Tweet])
-<ul>
-@for(tweet <- tweets){
-    <li>@tweet.tweetOwnerName</li>
-    <li>@tweet.tweetText</li>
+
+@for(t <- tweets){
+    tweet(t)
 }
-</ul>

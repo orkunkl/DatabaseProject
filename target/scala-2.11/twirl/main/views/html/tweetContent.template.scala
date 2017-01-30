@@ -16,22 +16,22 @@ import play.api.data._
 
      object tweetContent_Scope1 {
 import models.Tweet
+import views.html.tweet
 
 class tweetContent extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[List[Tweet],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*2.2*/(tweets : List[Tweet]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*4.2*/(tweets : List[Tweet]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*2.24*/("""
-"""),format.raw/*3.1*/("""<ul>
-"""),_display_(/*4.2*/for(tweet <- tweets) yield /*4.22*/{_display_(Seq[Any](format.raw/*4.23*/("""
-    """),format.raw/*5.5*/("""<li>"""),_display_(/*5.10*/tweet/*5.15*/.tweetOwnerName),format.raw/*5.30*/("""</li>
-    <li>"""),_display_(/*6.10*/tweet/*6.15*/.tweetText),format.raw/*6.25*/("""</li>
-""")))}),format.raw/*7.2*/("""
-"""),format.raw/*8.1*/("""</ul>"""))
+Seq[Any](format.raw/*4.24*/("""
+
+"""),_display_(/*6.2*/for(t <- tweets) yield /*6.18*/{_display_(Seq[Any](format.raw/*6.19*/("""
+    """),format.raw/*7.5*/("""tweet(t)
+""")))}),format.raw/*8.2*/("""
+"""))
       }
     }
   }
@@ -52,11 +52,11 @@ Seq[Any](format.raw/*2.24*/("""
 object tweetContent extends tweetContent_Scope0.tweetContent_Scope1.tweetContent
               /*
                   -- GENERATED --
-                  DATE: Mon Jan 30 15:18:35 CET 2017
+                  DATE: Mon Jan 30 17:16:43 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/tweetContent.scala.html
-                  HASH: d7e414ef033d60c3bb32c760f4d196a6b66c88de
-                  MATRIX: 601->22|718->44|745->45|776->51|811->71|849->72|880->77|911->82|924->87|959->102|1000->117|1013->122|1043->132|1079->139|1106->140
-                  LINES: 23->2|28->2|29->3|30->4|30->4|30->4|31->5|31->5|31->5|31->5|32->6|32->6|32->6|33->7|34->8
+                  HASH: 09bf8e6d4c62baeecc4a711448c6a2e4f7687e71
+                  MATRIX: 625->48|742->70|770->73|801->89|839->90|870->95|909->105
+                  LINES: 24->4|29->4|31->6|31->6|31->6|32->7|33->8
                   -- GENERATED --
               */
           

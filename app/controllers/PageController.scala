@@ -11,6 +11,7 @@ import play.api.mvc._
 import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.twirl.api.Html
+import views.html.tweetContent
 import views.viewForms.userAuthForm
 
 import scala.concurrent.{ExecutionContext, Future, Promise}
@@ -36,24 +37,22 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
     *
     * */
   def landing = Action.async { implicit request =>
+    val tweets = DatabaseController.getTweets()
     val result = for {
       account_id <- request.session.get("accountID")   //***** burası giriş
       username <-  request.session.get("username")
     } yield {
       val user = User(Some(account_id.toInt), username,"",0)
-      Future(Ok(views.html.index(webJarAssets, Some(user),
-                views.html.landing(new Html("a"))))) // INTRO
-    }
-    result.getOrElse(Future(Ok(views.html.index(webJarAssets, None, views.html.landing(new Html("a"))))))
-  }
-  def mainPage = Action.async { implicit request =>
 
-    for {
-      account_id <- request.session.get("account_id")
-      username <- request.session.get("username")
-    } yield {
-      Future(Ok("")) // INTRO
+      tweets.map{tweets =>
+        Ok(views.html.index(webJarAssets, Some(user),
+        views.html.landing(tweetContent(tweets))))}
     }
-    Future(Ok(""))
+    result.getOrElse(
+      tweets.map{tweets =>
+        Ok(views.html.index(webJarAssets, None,
+          views.html.landing(tweetContent(tweets))))}
+    )
   }
+
 }

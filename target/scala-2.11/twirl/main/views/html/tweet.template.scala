@@ -14,19 +14,21 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-class tweet extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[List[Tweet],Messages,play.twirl.api.HtmlFormat.Appendable] {
+     object tweet_Scope1 {
+import models.Tweet
+
+class tweet extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Tweet,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(tweets : List[Tweet])(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*2.2*/(tweet : Tweet):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.53*/("""
+Seq[Any](format.raw/*2.17*/("""
 
-"""),_display_(/*3.2*/for(tweet <- tweets) yield /*3.22*/ {_display_(Seq[Any](format.raw/*3.24*/("""
-    """),format.raw/*4.5*/("""<div class="row">
-        <div class="col-md-12">
+"""),format.raw/*4.1*/("""<div class="row">
+    <div class="col-md-12">
         <ul>
             <li>
                 <ul>"""),_display_(/*8.22*/tweet/*8.27*/.tweetOwnerName),format.raw/*8.42*/("""   """),format.raw/*8.45*/("""</ul>
@@ -37,17 +39,17 @@ Seq[Any](format.raw/*1.53*/("""
                 <a href="/like/"""),_display_(/*13.33*/tweet/*13.38*/.tweetID),format.raw/*13.46*/("""">Like</a>
             </li>
         </ul>
-        </div>
     </div>
-""")))}),format.raw/*18.2*/("""
+</div>
+
 """))
       }
     }
   }
 
-  def render(tweets:List[Tweet],messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(tweets)(messages)
+  def render(tweet:Tweet): play.twirl.api.HtmlFormat.Appendable = apply(tweet)
 
-  def f:((List[Tweet]) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (tweets) => (messages) => apply(tweets)(messages)
+  def f:((Tweet) => play.twirl.api.HtmlFormat.Appendable) = (tweet) => apply(tweet)
 
   def ref: this.type = this
 
@@ -55,16 +57,17 @@ Seq[Any](format.raw/*1.53*/("""
 
 
 }
+}
 
 /**/
-object tweet extends tweet_Scope0.tweet
+object tweet extends tweet_Scope0.tweet_Scope1.tweet
               /*
                   -- GENERATED --
-                  DATE: Mon Jan 30 16:52:21 CET 2017
+                  DATE: Mon Jan 30 17:11:42 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/tweet.scala.html
-                  HASH: 490805e96fbf52182c08c4538b2e84c9fac1f65d
-                  MATRIX: 541->1|687->52|715->55|750->75|789->77|820->82|947->183|960->188|995->203|1025->206|1078->233|1091->238|1121->248|1224->324|1238->329|1267->337|1340->383|1354->388|1383->396|1483->466
-                  LINES: 20->1|25->1|27->3|27->3|27->3|28->4|32->8|32->8|32->8|32->8|33->9|33->9|33->9|36->12|36->12|36->12|37->13|37->13|37->13|42->18
+                  HASH: 39cf6faef5fe6906af913ea6ad51bd48969a933a
+                  MATRIX: 574->22|684->37|712->39|835->136|848->141|883->156|913->159|966->186|979->191|1009->201|1112->277|1126->282|1155->290|1228->336|1242->341|1271->349
+                  LINES: 23->2|28->2|30->4|34->8|34->8|34->8|34->8|35->9|35->9|35->9|38->12|38->12|38->12|39->13|39->13|39->13
                   -- GENERATED --
               */
           

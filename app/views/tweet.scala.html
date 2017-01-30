@@ -1,8 +1,8 @@
-@(tweets : List[Tweet])(implicit messages: Messages)
+@import models.Tweet
+@(tweet : Tweet)
 
-@for(tweet <- tweets) {
-    <div class="row">
-        <div class="col-md-12">
+<div class="row">
+    <div class="col-md-12">
         <ul>
             <li>
                 <ul>@tweet.tweetOwnerName   </ul>
@@ -13,6 +13,6 @@
                 <a href="/like/@tweet.tweetID">Like</a>
             </li>
         </ul>
-        </div>
     </div>
-}
+</div>
+
