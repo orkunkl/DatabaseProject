@@ -4,7 +4,7 @@
 		module="databaseproject$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170129171720"
+		publication="20170130181742"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

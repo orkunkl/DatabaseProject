@@ -57,8 +57,8 @@ Seq[Any](format.raw/*5.46*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 29 16:06:20 CET 2017
-                  SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/index.scala.html
+                  DATE: Mon Jan 30 17:18:16 CET 2017
+                  SOURCE: /home/furkan/Desktop/DatabaseProject/app/views/index.scala.html
                   HASH: 71b8e30a18918aad5f19a81aa47ea6fb13762316
                   MATRIX: 623->95|762->139|791->335|819->337|851->360|891->362|924->491|956->497|984->504|1017->507
                   LINES: 23->5|28->5|30->11|31->12|31->12|31->12|33->17|34->18|34->18|36->20

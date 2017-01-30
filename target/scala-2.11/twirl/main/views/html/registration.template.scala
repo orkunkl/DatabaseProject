@@ -54,8 +54,8 @@ Seq[Any](format.raw/*3.58*/("""
 object registration extends registration_Scope0.registration_Scope1.registration
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 29 17:17:37 CET 2017
-                  SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html
+                  DATE: Mon Jan 30 17:18:16 CET 2017
+                  SOURCE: /home/furkan/Desktop/DatabaseProject/app/views/registration.scala.html
                   HASH: 9414bbbfb73897b94b60d710bf9f3a406b3d4a00
                   MATRIX: 633->39|872->95|900->187|927->189|936->191|1022->269|1061->271|1092->277|1101->279|1228->385|1259->391|1268->393|1375->480|1407->486|1417->488|1462->524|1501->525|1530->526|1570->535|1602->537
                   LINES: 23->3|28->3|30->6|31->7|31->7|31->7|31->7|32->8|32->8|32->8|33->9|33->9|33->9|34->10|34->10|34->10|34->10|34->10|34->10|35->11
