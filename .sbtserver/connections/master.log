@@ -23,10 +23,10 @@ New client attempting to connect on port: 36272-41701
 This client on port 36272 has uuid 42ac3751-c3be-4087-b935-4e8406f4555d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
 Connected Clients: activator-ec6f7fe8-a10b-4058-a1d0-4aa85d020aa9, activator-42ac3751-c3be-4087-b935-4e8406f4555d
 Taking next connection to: 41701
-New client attempting to connect on port: 36274-41701
-  Address = /127.0.1.1:41701
-Handshake exception on socket: 36274
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
+New client attemChecking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 43233
+: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
 	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
