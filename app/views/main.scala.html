@@ -4,13 +4,13 @@
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  *@
-@(webJarAssets: WebJarAssets)(content: Html)(implicit messages: Messages)
+@(title: String, webJarAssets: WebJarAssets, user : Option[User])(content: Html)(implicit messages: Messages)
 
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Pizarra (ALPHA)</title>
+        <title>title</title>
         <link rel='stylesheet' href='@routes.WebJarAssets.at(webJarAssets.locate("css/bootstrap.min.css"))'>
         <link rel='stylesheet' media="screen" href='@routes.Assets.versioned("stylesheets/main.css")'>
         <link rel='shortcut icon' type="image/png" href='@routes.Assets.versioned("images/favicon.png")'>
@@ -20,12 +20,18 @@
             <div class="container">
                 <a href="/" class="navbar-brand">Pizarra</a>
                 <form class="nav navbar-nav pull-right">
-                    <li><a href="/">Register or Login</a></li>
+                    @user match {
+                        case None => {<li><a href="/authenticate">Register or Login</a></li>}
+                        case Some(u) => {
+                            <li>Hello @u.username</li>
+                            <li><a href="/logout">Log out</a></li>
+                        }
+                    }
                 </form>
             </div>
         </header>
         <div class="container">
-        @content
+          @content
         </div>
         @*-- Footer -- *@
         <footer></footer>

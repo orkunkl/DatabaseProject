@@ -1,0 +1,8 @@
+@import models.Tweet
+@(tweets : List[Tweet])
+<ul>
+@for(tweet <- tweets){
+    <li>@tweet.tweetOwnerName</li>
+    <li>@tweet.tweetText</li>
+}
+</ul>

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Sun Jan 29 21:29:06 CET 2017
+// @DATE:Mon Jan 30 16:52:21 CET 2017
 
 
 package router {

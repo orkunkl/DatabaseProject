@@ -7,15 +7,15 @@
 # An example controller showing how to use dependency injection
 # An example controller showing how to write asynchronous code
 
-GET     /                           controllers.AsyncController.landing
+GET     /                           controllers.PageController.landing
 
-GET     /message                    controllers.AsyncController.message
+GET     /logout                     controllers.UserAuthenticationController.logOut
 
-GET     /authenticate               controllers.AsyncController.authenticate
+GET     /authenticate               controllers.UserAuthenticationController.authenticate
 
-POST    /signin                     controllers.AsyncController.signInNewUser
+POST    /signin                     controllers.UserAuthenticationController.signInNewUser
 
-POST    /login                      controllers.AsyncController.logInUser
+POST    /login                      controllers.UserAuthenticationController.logInUser
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 

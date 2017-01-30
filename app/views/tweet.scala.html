@@ -1,11 +1,18 @@
-@(tweet : Tweet)(implicit messages: Messages)
+@(tweets : List[Tweet])(implicit messages: Messages)
 
-@import b3.vertical.fieldConstructor  // Declares a vertical field constructor as default
-
-<div class="row">
-    <div class="col-md-12">@tweet.tweetText</div>
-    @b3.form(action = routes.AsyncController.logInUser, 'id -> tweet.tweetID) {
-        @b3.submit('class -> "btn btn-default"){ Login }
-    }
-
-</div>
+@for(tweet <- tweets) {
+    <div class="row">
+        <div class="col-md-12">
+        <ul>
+            <li>
+                <ul>@tweet.tweetOwnerName   </ul>
+                <ul>@tweet.tweetText</ul>
+            </li>
+            <li>
+                <a href="/comment/@tweet.tweetID">Comment</a>
+                <a href="/like/@tweet.tweetID">Like</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+}

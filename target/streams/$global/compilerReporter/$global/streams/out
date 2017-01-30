@@ -1,5 +1,7 @@
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/index.scala.html:12: not enough arguments for method apply: (webJarAssets: controllers.WebJarAssets, content: play.twirl.api.Html)(implicit messages: play.api.i18n.Messages)play.twirl.api.HtmlFormat.Appendable in class main.[0m
-[0m[[31merror[0m] [0mUnspecified value parameter content.[0m
-[0m[[31merror[0m] [0m@main(webJarAssets) {[0m
-[0m[[31merror[0m] [0m     ^[0m
-[0m[[31merror[0m] [0mone error found[0m
+[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/login.scala.html:7: value AsyncController is not a member of object controllers.routes[0m
+[0m[[31merror[0m] [0m@b3.form(action = routes.AsyncController.logInUser) {[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html:7: value AsyncController is not a member of object controllers.routes[0m
+[0m[[31merror[0m] [0m@b3.form(routes.AsyncController.signInNewUser) {[0m
+[0m[[31merror[0m] [0m                ^[0m
+[0m[[31merror[0m] [0mtwo errors found[0m

@@ -1,8 +1,8 @@
 @import views.viewForms.userAuthForm
+@import models.User
 
-@(registrationForm: Form[userAuthForm], loginForm: Form[userAuthForm])(implicit messages: Messages)
+@(content: Html)(implicit messages: Messages)
 
 <div class="row">
-    @registration(registrationForm)
-    @login(loginForm)
+    @content
 </div>

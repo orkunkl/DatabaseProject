@@ -11,6 +11,10 @@ GET     /                           controllers.AsyncController.landing
 
 GET     /message                    controllers.AsyncController.message
 
+GET     /logout                     controllers.AsyncController.logOut
+
+GET     /authenticate               controllers.AsyncController.authenticate
+
 POST    /signin                     controllers.AsyncController.signInNewUser
 
 POST    /login                      controllers.AsyncController.logInUser

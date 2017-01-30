@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Sun Jan 29 21:29:06 CET 2017
+// @DATE:Mon Jan 30 16:52:21 CET 2017
 
 package router
 
@@ -16,10 +16,12 @@ import _root_.controllers.Assets.Asset
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:10
-  AsyncController_2: controllers.AsyncController,
-  // @LINE:18
-  Assets_1: controllers.Assets,
-  // @LINE:21
+  PageController_2: controllers.PageController,
+  // @LINE:12
+  UserAuthenticationController_1: controllers.UserAuthenticationController,
+  // @LINE:20
+  Assets_3: controllers.Assets,
+  // @LINE:23
   WebJarAssets_0: controllers.WebJarAssets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,18 +29,20 @@ class Routes(
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:10
-    AsyncController_2: controllers.AsyncController,
-    // @LINE:18
-    Assets_1: controllers.Assets,
-    // @LINE:21
+    PageController_2: controllers.PageController,
+    // @LINE:12
+    UserAuthenticationController_1: controllers.UserAuthenticationController,
+    // @LINE:20
+    Assets_3: controllers.Assets,
+    // @LINE:23
     WebJarAssets_0: controllers.WebJarAssets
-  ) = this(errorHandler, AsyncController_2, Assets_1, WebJarAssets_0, "/")
+  ) = this(errorHandler, PageController_2, UserAuthenticationController_1, Assets_3, WebJarAssets_0, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, AsyncController_2, Assets_1, WebJarAssets_0, prefix)
+    new Routes(errorHandler, PageController_2, UserAuthenticationController_1, Assets_3, WebJarAssets_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -46,10 +50,11 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.AsyncController.landing"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """message""", """controllers.AsyncController.message"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signin""", """controllers.AsyncController.signInNewUser"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.AsyncController.logInUser"""),
+    ("""GET""", this.prefix, """controllers.PageController.landing"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.UserAuthenticationController.logOut"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authenticate""", """controllers.UserAuthenticationController.authenticate"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signin""", """controllers.UserAuthenticationController.signInNewUser"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UserAuthenticationController.logInUser"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """webjars/""" + "$" + """file<.+>""", """controllers.WebJarAssets.at(file:String)"""),
     Nil
@@ -60,14 +65,14 @@ class Routes(
 
 
   // @LINE:10
-  private[this] lazy val controllers_AsyncController_landing0_route = Route("GET",
+  private[this] lazy val controllers_PageController_landing0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_AsyncController_landing0_invoker = createInvoker(
-    AsyncController_2.landing,
+  private[this] lazy val controllers_PageController_landing0_invoker = createInvoker(
+    PageController_2.landing,
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.AsyncController",
+      "controllers.PageController",
       "landing",
       Nil,
       "GET",
@@ -77,31 +82,48 @@ class Routes(
   )
 
   // @LINE:12
-  private[this] lazy val controllers_AsyncController_message1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("message")))
+  private[this] lazy val controllers_UserAuthenticationController_logOut1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
   )
-  private[this] lazy val controllers_AsyncController_message1_invoker = createInvoker(
-    AsyncController_2.message,
+  private[this] lazy val controllers_UserAuthenticationController_logOut1_invoker = createInvoker(
+    UserAuthenticationController_1.logOut,
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.AsyncController",
-      "message",
+      "controllers.UserAuthenticationController",
+      "logOut",
       Nil,
       "GET",
       """""",
-      this.prefix + """message"""
+      this.prefix + """logout"""
     )
   )
 
   // @LINE:14
-  private[this] lazy val controllers_AsyncController_signInNewUser2_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signin")))
+  private[this] lazy val controllers_UserAuthenticationController_authenticate2_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("authenticate")))
   )
-  private[this] lazy val controllers_AsyncController_signInNewUser2_invoker = createInvoker(
-    AsyncController_2.signInNewUser,
+  private[this] lazy val controllers_UserAuthenticationController_authenticate2_invoker = createInvoker(
+    UserAuthenticationController_1.authenticate,
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.AsyncController",
+      "controllers.UserAuthenticationController",
+      "authenticate",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """authenticate"""
+    )
+  )
+
+  // @LINE:16
+  private[this] lazy val controllers_UserAuthenticationController_signInNewUser3_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signin")))
+  )
+  private[this] lazy val controllers_UserAuthenticationController_signInNewUser3_invoker = createInvoker(
+    UserAuthenticationController_1.signInNewUser,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserAuthenticationController",
       "signInNewUser",
       Nil,
       "POST",
@@ -110,15 +132,15 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_AsyncController_logInUser3_route = Route("POST",
+  // @LINE:18
+  private[this] lazy val controllers_UserAuthenticationController_logInUser4_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
   )
-  private[this] lazy val controllers_AsyncController_logInUser3_invoker = createInvoker(
-    AsyncController_2.logInUser,
+  private[this] lazy val controllers_UserAuthenticationController_logInUser4_invoker = createInvoker(
+    UserAuthenticationController_1.logInUser,
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.AsyncController",
+      "controllers.UserAuthenticationController",
       "logInUser",
       Nil,
       "POST",
@@ -127,12 +149,12 @@ class Routes(
     )
   )
 
-  // @LINE:18
-  private[this] lazy val controllers_Assets_versioned4_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_Assets_versioned5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned4_invoker = createInvoker(
-    Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned5_invoker = createInvoker(
+    Assets_3.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -144,11 +166,11 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_WebJarAssets_at5_route = Route("GET",
+  // @LINE:23
+  private[this] lazy val controllers_WebJarAssets_at6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("webjars/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_WebJarAssets_at5_invoker = createInvoker(
+  private[this] lazy val controllers_WebJarAssets_at6_invoker = createInvoker(
     WebJarAssets_0.at(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -165,39 +187,45 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:10
-    case controllers_AsyncController_landing0_route(params) =>
+    case controllers_PageController_landing0_route(params) =>
       call { 
-        controllers_AsyncController_landing0_invoker.call(AsyncController_2.landing)
+        controllers_PageController_landing0_invoker.call(PageController_2.landing)
       }
   
     // @LINE:12
-    case controllers_AsyncController_message1_route(params) =>
+    case controllers_UserAuthenticationController_logOut1_route(params) =>
       call { 
-        controllers_AsyncController_message1_invoker.call(AsyncController_2.message)
+        controllers_UserAuthenticationController_logOut1_invoker.call(UserAuthenticationController_1.logOut)
       }
   
     // @LINE:14
-    case controllers_AsyncController_signInNewUser2_route(params) =>
+    case controllers_UserAuthenticationController_authenticate2_route(params) =>
       call { 
-        controllers_AsyncController_signInNewUser2_invoker.call(AsyncController_2.signInNewUser)
+        controllers_UserAuthenticationController_authenticate2_invoker.call(UserAuthenticationController_1.authenticate)
       }
   
     // @LINE:16
-    case controllers_AsyncController_logInUser3_route(params) =>
+    case controllers_UserAuthenticationController_signInNewUser3_route(params) =>
       call { 
-        controllers_AsyncController_logInUser3_invoker.call(AsyncController_2.logInUser)
+        controllers_UserAuthenticationController_signInNewUser3_invoker.call(UserAuthenticationController_1.signInNewUser)
       }
   
     // @LINE:18
-    case controllers_Assets_versioned4_route(params) =>
-      call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned4_invoker.call(Assets_1.versioned(path, file))
+    case controllers_UserAuthenticationController_logInUser4_route(params) =>
+      call { 
+        controllers_UserAuthenticationController_logInUser4_invoker.call(UserAuthenticationController_1.logInUser)
       }
   
-    // @LINE:21
-    case controllers_WebJarAssets_at5_route(params) =>
+    // @LINE:20
+    case controllers_Assets_versioned5_route(params) =>
+      call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
+        controllers_Assets_versioned5_invoker.call(Assets_3.versioned(path, file))
+      }
+  
+    // @LINE:23
+    case controllers_WebJarAssets_at6_route(params) =>
       call(params.fromPath[String]("file", None)) { (file) =>
-        controllers_WebJarAssets_at5_invoker.call(WebJarAssets_0.at(file))
+        controllers_WebJarAssets_at6_invoker.call(WebJarAssets_0.at(file))
       }
   }
 }

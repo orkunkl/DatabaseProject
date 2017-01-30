@@ -28,7 +28,7 @@ import b3.vertical.fieldConstructor  // Declares a vertical field constructor as
 Seq[Any](format.raw/*3.58*/("""
 
 """),format.raw/*6.1*/("""
-"""),_display_(/*7.2*/b3/*7.4*/.form(routes.AsyncController.signInNewUser)/*7.47*/ {_display_(Seq[Any](format.raw/*7.49*/("""
+"""),_display_(/*7.2*/b3/*7.4*/.form(routes.UserAuthenticationController.signInNewUser)/*7.60*/ {_display_(Seq[Any](format.raw/*7.62*/("""
     """),_display_(/*8.6*/b3/*8.8*/.text(User("username"), '_value -> "", '_label -> "Room name", 'autofocus -> "true", '_required -> "true")),format.raw/*8.114*/("""
     """),_display_(/*9.6*/b3/*9.8*/.password(User("password"), '_value -> "", '_label -> "Password", '_required -> "true")),format.raw/*9.95*/("""
     """),_display_(/*10.6*/b3/*10.8*/.submit('class -> "btn btn-default")/*10.44*/{_display_(Seq[Any](format.raw/*10.45*/(""" """),format.raw/*10.46*/("""Sign in """)))}),format.raw/*10.55*/("""
@@ -54,10 +54,10 @@ Seq[Any](format.raw/*3.58*/("""
 object registration extends registration_Scope0.registration_Scope1.registration
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 29 20:32:36 CET 2017
+                  DATE: Mon Jan 30 16:54:43 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/registration.scala.html
-                  HASH: 348954ee4a27a1439ad0e3754fd73dea91531c14
-                  MATRIX: 633->39|872->95|900->187|927->189|936->191|987->234|1026->236|1057->242|1066->244|1193->350|1224->356|1233->358|1340->445|1372->451|1382->453|1427->489|1466->490|1495->491|1535->500|1567->502
+                  HASH: 62d97456cb676711032f1e742df45ed0539456b4
+                  MATRIX: 633->39|872->95|900->187|927->189|936->191|1000->247|1039->249|1070->255|1079->257|1206->363|1237->369|1246->371|1353->458|1385->464|1395->466|1440->502|1479->503|1508->504|1548->513|1580->515
                   LINES: 23->3|28->3|30->6|31->7|31->7|31->7|31->7|32->8|32->8|32->8|33->9|33->9|33->9|34->10|34->10|34->10|34->10|34->10|34->10|35->11
                   -- GENERATED --
               */

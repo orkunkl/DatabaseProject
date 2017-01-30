@@ -4,7 +4,7 @@
 
 @import b3.vertical.fieldConstructor  // Declares a vertical field constructor as default
 
-@b3.form(action = routes.AsyncController.logInUser) {
+@b3.form(action = routes.UserAuthenticationController.logInUser) {
     @b3.text(User("username"), '_value -> "", '_label -> "Username", 'autofocus -> "true", '_required -> "true")
     @b3.password(User("password"), '_value -> "", '_label -> "Password", '_required -> "true")
     @b3.submit('class -> "btn btn-default"){ Login }

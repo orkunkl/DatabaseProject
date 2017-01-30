@@ -14,7 +14,7 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[WebJarAssets,Html,Messages,play.twirl.api.HtmlFormat.Appendable] {
+class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template5[String,WebJarAssets,Option[User],Html,Messages,play.twirl.api.HtmlFormat.Appendable] {
 
   /*
  * This template is called from the `index` template. This template
@@ -22,18 +22,18 @@ class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  */
-  def apply/*7.2*/(webJarAssets: WebJarAssets)(content: Html)(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*7.2*/(title: String, webJarAssets: WebJarAssets, user : Option[User])(content: Html)(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*7.74*/("""
+Seq[Any](format.raw/*7.110*/("""
 
 
 """),format.raw/*10.1*/("""<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Pizarra (ALPHA)</title>
+        <title>title</title>
         <link rel='stylesheet' href='"""),_display_(/*14.39*/routes/*14.45*/.WebJarAssets.at(webJarAssets.locate("css/bootstrap.min.css"))),format.raw/*14.107*/("""'>
         <link rel='stylesheet' media="screen" href='"""),_display_(/*15.54*/routes/*15.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*15.101*/("""'>
         <link rel='shortcut icon' type="image/png" href='"""),_display_(/*16.59*/routes/*16.65*/.Assets.versioned("images/favicon.png")),format.raw/*16.104*/("""'>
@@ -42,16 +42,19 @@ Seq[Any](format.raw/*7.74*/("""
         <header class="navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <a href="/" class="navbar-brand">Pizarra</a>
-                <ul class="nav navbar-nav pull-right">
-                    <li><a href="/add">Add</a></li>
-                </ul>
+                <form class="nav navbar-nav pull-right">
+                    """),_display_(/*23.22*/user/*23.26*/ match/*23.32*/ {/*24.25*/case None =>/*24.37*/ {_display_(Seq[Any](format.raw/*24.39*/("""<li><a href="/authenticate">Register or Login</a></li>""")))}/*25.25*/case Some(u) =>/*25.40*/ {_display_(Seq[Any](format.raw/*25.42*/("""
+                            """),format.raw/*26.29*/("""<li>Hello """),_display_(/*26.40*/u/*26.41*/.username),format.raw/*26.50*/("""</li>
+                            <li><a href="/logout">Log out</a></li>
+                        """)))}}),format.raw/*29.22*/("""
+                """),format.raw/*30.17*/("""</form>
             </div>
         </header>
         <div class="container">
-        """),_display_(/*28.10*/content),format.raw/*28.17*/("""
-        """),format.raw/*29.9*/("""</div>
-        """),format.raw/*30.26*/("""
-        """),format.raw/*31.9*/("""<footer></footer>
+          """),_display_(/*34.12*/content),format.raw/*34.19*/("""
+        """),format.raw/*35.9*/("""</div>
+        """),format.raw/*36.26*/("""
+        """),format.raw/*37.9*/("""<footer></footer>
     </body>
 </html>
 """))
@@ -59,9 +62,9 @@ Seq[Any](format.raw/*7.74*/("""
     }
   }
 
-  def render(webJarAssets:WebJarAssets,content:Html,messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(webJarAssets)(content)(messages)
+  def render(title:String,webJarAssets:WebJarAssets,user:Option[User],content:Html,messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(title,webJarAssets,user)(content)(messages)
 
-  def f:((WebJarAssets) => (Html) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (webJarAssets) => (content) => (messages) => apply(webJarAssets)(content)(messages)
+  def f:((String,WebJarAssets,Option[User]) => (Html) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (title,webJarAssets,user) => (content) => (messages) => apply(title,webJarAssets,user)(content)(messages)
 
   def ref: this.type = this
 
@@ -79,11 +82,11 @@ Seq[Any](format.raw/*7.74*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 29 21:42:39 CET 2017
+                  DATE: Mon Jan 30 15:34:50 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/main.scala.html
-                  HASH: 648082c34bdfe9c7442c939ff3bd74ff21472c7c
-                  MATRIX: 799->260|966->332|996->335|1144->456|1159->462|1243->524|1326->580|1341->586|1404->627|1492->688|1507->694|1568->733|1990->1128|2018->1135|2054->1144|2097->1176|2133->1185
-                  LINES: 25->7|30->7|33->10|37->14|37->14|37->14|38->15|38->15|38->15|39->16|39->16|39->16|51->28|51->28|52->29|53->30|54->31
+                  HASH: 529daa0b98f3189afb18709c06e3379b734ab6b1
+                  MATRIX: 819->260|1023->368|1053->371|1191->482|1206->488|1290->550|1373->606|1388->612|1451->653|1539->714|1554->720|1615->759|1908->1025|1921->1029|1936->1035|1947->1062|1968->1074|2008->1076|2082->1156|2106->1171|2146->1173|2203->1202|2241->1213|2251->1214|2281->1223|2411->1343|2456->1360|2571->1448|2599->1455|2635->1464|2678->1496|2714->1505
+                  LINES: 25->7|30->7|33->10|37->14|37->14|37->14|38->15|38->15|38->15|39->16|39->16|39->16|46->23|46->23|46->23|46->24|46->24|46->24|46->25|46->25|46->25|47->26|47->26|47->26|47->26|49->29|50->30|54->34|54->34|55->35|56->36|57->37
                   -- GENERATED --
               */
           
