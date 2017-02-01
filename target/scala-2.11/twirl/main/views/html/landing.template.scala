@@ -28,10 +28,32 @@ class landing extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,For
 
 Seq[Any](format.raw/*4.95*/("""
 
-"""),_display_(/*6.2*/user/*6.6*/ match/*6.12*/ {/*7.5*/case Some(user) =>/*7.23*/ {_display_(_display_(/*7.26*/tweetPost(tweet)))}/*8.5*/case None =>/*8.17*/ {}}),format.raw/*9.2*/("""
-"""),_display_(/*10.2*/for(tweet <- tweets) yield /*10.22*/{_display_(Seq[Any](format.raw/*10.23*/("""
-    """),_display_(/*11.6*/tweetView(tweet)),format.raw/*11.22*/("""
-""")))}))
+"""),format.raw/*6.1*/("""<div class="col-md-8">
+
+"""),_display_(/*8.2*/user/*8.6*/ match/*8.12*/ {/*9.5*/case Some(user) =>/*9.23*/ {_display_(_display_(/*9.26*/tweetPost(tweet)))}/*10.5*/case None =>/*10.17*/ {}}),format.raw/*11.2*/("""
+"""),_display_(/*12.2*/for(tweet <- tweets) yield /*12.22*/{_display_(Seq[Any](format.raw/*12.23*/("""
+    """),_display_(/*13.6*/tweetView(tweet)),format.raw/*13.22*/("""
+""")))}),format.raw/*14.2*/("""
+
+"""),format.raw/*16.1*/("""</div>
+
+<div class="col-md-4">
+    <h2>Hashtags</h2>
+    <ul class="list-group">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+    </ul>
+</div>
+
+<div class="col-md-4">
+    <h2>Hashtags</h2>
+    <ul class="list-group">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+    </ul>
+</div>"""))
       }
     }
   }
@@ -52,11 +74,11 @@ Seq[Any](format.raw/*4.95*/("""
 object landing extends landing_Scope0.landing_Scope1.landing
               /*
                   -- GENERATED --
-                  DATE: Wed Feb 01 19:24:59 CET 2017
-                  SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/landing.scala.html
-                  HASH: 4f464f084db7bb20831e2f5b3bc1888b0a689177
-                  MATRIX: 656->56|844->149|872->152|883->156|897->162|906->169|932->187|962->190|988->212|1008->224|1031->229|1059->231|1095->251|1134->252|1166->258|1203->274
-                  LINES: 24->4|29->4|31->6|31->6|31->6|31->7|31->7|31->7|31->8|31->8|31->9|32->10|32->10|32->10|33->11|33->11
+                  DATE: Wed Feb 01 21:34:18 CET 2017
+                  SOURCE: /home/furkan/Desktop/DatabaseProject/app/views/landing.scala.html
+                  HASH: b0fd93f115aa0856f643bc234a1637b8abb1c5a8
+                  MATRIX: 656->56|844->149|872->151|922->176|933->180|947->186|956->193|982->211|1012->214|1039->236|1060->248|1084->253|1112->255|1148->275|1187->276|1219->282|1256->298|1288->300|1317->302
+                  LINES: 24->4|29->4|31->6|33->8|33->8|33->8|33->9|33->9|33->9|33->10|33->10|33->11|34->12|34->12|34->12|35->13|35->13|36->14|38->16
                   -- GENERATED --
               */
           

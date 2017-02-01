@@ -3,6 +3,8 @@
 
 @(user: Option[User], tweets: List[Tweet],tweet: Form[tweetForm])(implicit messages: Messages)
 
+<div class="col-md-8">
+
 @user match {
     case Some(user) => {@tweetPost(tweet)}
     case None => {}
@@ -10,3 +12,23 @@
 @for(tweet <- tweets){
     @tweetView(tweet)
 }
+
+</div>
+
+<div class="col-md-4">
+    <h2>Hashtags</h2>
+    <ul class="list-group">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+    </ul>
+</div>
+
+<div class="col-md-4">
+    <h2>Hashtags</h2>
+    <ul class="list-group">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+    </ul>
+</div>

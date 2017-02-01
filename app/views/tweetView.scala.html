@@ -2,52 +2,63 @@
 @(tweet: Tweet)
 
 
-<form class="form-horizontal">
-    <div class="form-group">
+    <div>
         <label class="col-sm-2 control-label">Account Name</label>
         <div class="col-sm-10">
                 @tweet.tweetOwnerName
         </div>
     </div>
 
-    <div class="form-group">
+    <div>
         <label class="col-sm-2 control-label">Tweet</label>
         <div class="col-sm-10">
                 @tweet.tweetText
         </div>
     </div>
 
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <button type="button" class="btn btn-default">Like</button>
-        </div>
-    </div>
+    <form class="form-horizontal">
 
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <button type="button" onclick="showBox()" class="btn btn-default" id="showCommentBox">Comment</button>
-        </div>
-    </div>
-
-    <div id="commentArea" style="visibility: hidden">
-        <div class="form-group">
-            <label class="col-sm-2 control-label">Comment</label>
-            <div class="col-sm-10">
-                <textarea class="form-control" id="comment" rows="3"></textarea>
-            </div>
-        </div>
+        <input type="hidden" name="accountID" value="@tweet.tweetOwnerID">
+        <input type="hidden" name="tweetID" value="@tweet.tweetID">
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Comment</button>
+                <button type="button" class="btn btn-default">Like</button>
             </div>
         </div>
-    </div>
-</form>
+    </form>
+
+    <form class="form-horizontal">
+
+        <input type="hidden" name="accountID" value="@tweet.tweetOwnerID">
+        <input type="hidden" name="tweetID" value="@tweet.tweetID">
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" onclick="showBox@tweet.tweetID ()" class="btn btn-default" id="showCommentBox">Comment</button>
+            </div>
+        </div>
+
+
+        <div id="commentArea@tweet.tweetID" style="visibility: hidden">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Comment</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Comment</button>
+                </div>
+            </div>
+        </div>
+    </form>
 
 <script>
-    function showBox() {
-        document.getElementById("commentArea").style.visibility = "visible";
+    function showBox@tweet.tweetID () {
+        document.getElementById("commentArea@tweet.tweetID").style.visibility = "visible";
         document.getElementById("showCommentBox").remove();
     }
 </script>

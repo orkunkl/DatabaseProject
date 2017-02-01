@@ -1,7 +1,12 @@
 
 // @GENERATOR:play-routes-compiler
+<<<<<<< HEAD
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
 // @DATE:Wed Feb 01 21:20:23 CET 2017
+=======
+// @SOURCE:/home/furkan/Desktop/DatabaseProject/conf/routes
+// @DATE:Wed Feb 01 19:33:40 CET 2017
+>>>>>>> developmentFurkan2
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
