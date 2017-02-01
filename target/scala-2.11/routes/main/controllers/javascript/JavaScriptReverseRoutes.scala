@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Wed Feb 01 19:24:10 CET 2017
+// @SOURCE:/home/furkan/Desktop/DatabaseProject/conf/routes
+// @DATE:Wed Feb 01 19:33:40 CET 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
