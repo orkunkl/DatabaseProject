@@ -2647,3 +2647,7 @@ play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation erro
 2017-02-01 21:51:18,154 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
 2017-02-01 21:51:19,587 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
 >>>>>>> developmentFurkan2
+2017-02-01 22:47:18,944 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-02-01 22:47:18,949 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 22:47:32,836 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 22:47:39,073 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing

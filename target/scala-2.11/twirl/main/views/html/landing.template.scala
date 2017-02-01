@@ -74,8 +74,8 @@ Seq[Any](format.raw/*4.95*/("""
 object landing extends landing_Scope0.landing_Scope1.landing
               /*
                   -- GENERATED --
-                  DATE: Wed Feb 01 21:34:18 CET 2017
-                  SOURCE: /home/furkan/Desktop/DatabaseProject/app/views/landing.scala.html
+                  DATE: Wed Feb 01 22:46:39 CET 2017
+                  SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/landing.scala.html
                   HASH: b0fd93f115aa0856f643bc234a1637b8abb1c5a8
                   MATRIX: 656->56|844->149|872->151|922->176|933->180|947->186|956->193|982->211|1012->214|1039->236|1060->248|1084->253|1112->255|1148->275|1187->276|1219->282|1256->298|1288->300|1317->302
                   LINES: 24->4|29->4|31->6|33->8|33->8|33->8|33->9|33->9|33->9|33->10|33->10|33->11|34->12|34->12|34->12|35->13|35->13|36->14|38->16
