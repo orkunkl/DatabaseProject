@@ -7,14 +7,16 @@ import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import slick.driver.JdbcProfile
 import slick.driver.PostgresDriver.api._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
+import views.viewForms.tweetForm
 
+import scala.collection.mutable.ArrayBuffer
 import scala.concurrent.Future
 
 
 /**
   * Created by orkun on 29/01/17.
   */
-class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfigProvider) extends HasDatabaseConfigProvider[JdbcProfile] with DatabaseControllerTrait {
+class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfigProvider) extends HasDatabaseConfigProvider[JdbcProfile] with DatabaseControllerTrait with SlickDatabaseMapping {
 
   /**
     *
@@ -22,17 +24,7 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *
     * */
 
-  private val AccountTable = TableQuery[AccountsTable]
 
-  private class AccountsTable(tag: Tag) extends Table[User](tag, "accounts") {
-
-    def accountID = column[Int]("account_id", O.PrimaryKey, O.AutoInc)
-    def username = column[String]("username")
-    def password = column[String]("password")
-    def totalLikes = column[Int]("total_likes", O.Default(0))
-    override def * = (accountID.?, username, password, totalLikes) <> (User.tupled, User.unapply)
-
-  }
   override def addNewUser(user: User): Future[User] = db.run(AccountTable.returning(AccountTable.map(user => user)) += user)
 
   override def searchUser(username: String): Future[Option[User]] = db.run(AccountTable.filter(_.username===username).result.headOption)
@@ -44,19 +36,53 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *
     * */
 
-  private val TweetsTable = TableQuery[TweetsTable]
 
-  private class TweetsTable(tag: Tag) extends Table[Tweet](tag, "tweets") {
-
-    def tweetID = column[Int]("tweet_id", O.PrimaryKey, O.AutoInc)
-    def tweetOwnerID = column[Int]("tweet_owner_id")
-    def tweetOwner = column[String]("tweet_owner")
-    def tweetText = column[String]("tweet_text")
-    def totalLikes = column[Int]("total_likes", O.Default(0))
-    def locationId = column[Int]("location_id")
-
-    override def * = (tweetID.?, tweetOwnerID, tweetOwner, tweetText, totalLikes, locationId) <> (Tweet.tupled, Tweet.unapply)
-  }
 
   override def getTweets : Future[List[Tweet]] = db.run(TweetsTable.result).map(_.toList)
+
+  override def insertTweet(tweet: Tweet): Future[Int] = db.run(TweetsTable.returning(TweetsTable.map(tweet => tweet.tweetID)) += tweet)
+
+  /**
+    *
+    *   HASHTAG RELATED THINGS
+    *
+    * */
+
+
+  override def insertHashtag (hashtag: Hashtag): Future[Int] = db.run(HashtagTable.returning(HashtagTable.map(_.hashtagID)) += hashtag)
+  override def checkHashtag(hashtag: String) : Future[Option[Hashtag]] = db.run(HashtagTable.filter(_.hashtagName===hashtag).result.headOption)
+
+  /**
+    *
+    *   LOCATION RELATED THINGS
+    *
+    * */
+
+
+  override def getLocation (locationName: String) : Future[Option[Location]] = db.run(LocationTable.filter(_.name === locationName).result.headOption)
+  override def insertLocation (location: Location) : Future[Int] = db.run(LocationTable.returning(LocationTable.map(location => location)) += location).map{_.locationID.get}
+
+  /**
+    *
+    *   TRENDS RELATED THINGS
+    *
+    * */
+
+
+  /**
+    *
+    *   LIKE RELATED THINGS
+    *
+    * */
+  override def likeTweet (like: Like) : Future[Unit] = db.run(LikeTable += like).map { _ => ()}
+
+  /**
+    *
+    *   HASHTAG_TWEET_RELATION
+    *
+    * */
+
+
+  override def insertRelation (hashtagTweetRelation: ArrayBuffer[HashtagTweetRelation]) : Future[Unit] = db.run(HashtagTweetRelationTable ++= hashtagTweetRelation).map { _ => ()}
+
 }

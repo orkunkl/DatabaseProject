@@ -66,19 +66,19 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="controllers.AsyncController" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AsyncControllerextendsController"></a>
-      <a id="AsyncController:AsyncController"></a>
+              <ol><li name="controllers.PageController" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PageControllerextendsControllerwithI18nSupport"></a>
+      <a id="PageController:PageController"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="AsyncController.html"><span class="name">AsyncController</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span></span>
+        <a href="PageController.html"><span class="name">PageController</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span> with <span class="extype" name="play.api.i18n.I18nSupport">I18nSupport</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#controllers.package@AsyncControllerextendsController" title="Permalink" target="_top">
+      <a href="../index.html#controllers.package@PageControllerextendsControllerwithI18nSupport" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -86,54 +86,6 @@
 simple asynchronous code in a controller.</p><div class="fullcomment"><div class="comment cmt"><p>This controller creates an <code>Action</code> that demonstrates how to write
 simple asynchronous code in a controller. It uses a timer to
 asynchronously delay sending a response for 1 second.
-</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@Singleton</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="controllers.CountController" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="CountControllerextendsController"></a>
-      <a id="CountController:CountController"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="CountController.html"><span class="name">CountController</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#controllers.package@CountControllerextendsController" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">This controller demonstrates how to use dependency injection to
-bind a component into a controller class.</p><div class="fullcomment"><div class="comment cmt"><p>This controller demonstrates how to use dependency injection to
-bind a component into a controller class. The class creates an
-<code>Action</code> that shows an incrementing count to users. The <span class="extype" name="Counter">Counter</span>
-object is injected by the Guice dependency injection system.
-</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@Singleton</span><span class="args">()</span>
-              
-        </dd></dl></div>
-    </li><li name="controllers.HomeController" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="HomeControllerextendsController"></a>
-      <a id="HomeController:HomeController"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="HomeController.html"><span class="name">HomeController</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../index.html#controllers.package@HomeControllerextendsController" title="Permalink" target="_top">
-        <img src="../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">This controller creates an <code>Action</code> to handle HTTP requests to the
-application's home page.</p><div class="fullcomment"><div class="comment cmt"><p>This controller creates an <code>Action</code> to handle HTTP requests to the
-application's home page.
 </p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@Singleton</span><span class="args">()</span>
               
@@ -155,57 +107,81 @@ application's home page.
       </a>
     </span>
       
-    </li><li name="controllers.ReverseAsyncController" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ReverseAsyncControllerextendsAnyRef"></a>
-      <a id="ReverseAsyncController:ReverseAsyncController"></a>
+    </li><li name="controllers.ReversePageController" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReversePageControllerextendsAnyRef"></a>
+      <a id="ReversePageController:ReversePageController"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ReverseAsyncController.html"><span class="name">ReverseAsyncController</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ReversePageController.html"><span class="name">ReversePageController</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#controllers.package@ReverseAsyncControllerextendsAnyRef" title="Permalink" target="_top">
+      <a href="../index.html#controllers.package@ReversePageControllerextendsAnyRef" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="controllers.ReverseCountController" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ReverseCountControllerextendsAnyRef"></a>
-      <a id="ReverseCountController:ReverseCountController"></a>
+    </li><li name="controllers.ReverseUserAuthenticationController" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReverseUserAuthenticationControllerextendsAnyRef"></a>
+      <a id="ReverseUserAuthenticationController:ReverseUserAuthenticationController"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ReverseCountController.html"><span class="name">ReverseCountController</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ReverseUserAuthenticationController.html"><span class="name">ReverseUserAuthenticationController</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#controllers.package@ReverseCountControllerextendsAnyRef" title="Permalink" target="_top">
+      <a href="../index.html#controllers.package@ReverseUserAuthenticationControllerextendsAnyRef" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="controllers.ReverseHomeController" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ReverseHomeControllerextendsAnyRef"></a>
-      <a id="ReverseHomeController:ReverseHomeController"></a>
+    </li><li name="controllers.ReverseWebJarAssets" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReverseWebJarAssetsextendsAnyRef"></a>
+      <a id="ReverseWebJarAssets:ReverseWebJarAssets"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ReverseHomeController.html"><span class="name">ReverseHomeController</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ReverseWebJarAssets.html"><span class="name">ReverseWebJarAssets</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#controllers.package@ReverseHomeControllerextendsAnyRef" title="Permalink" target="_top">
+      <a href="../index.html#controllers.package@ReverseWebJarAssetsextendsAnyRef" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
+    </li><li name="controllers.UserAuthenticationController" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UserAuthenticationControllerextendsControllerwithI18nSupport"></a>
+      <a id="UserAuthenticationController:UserAuthenticationController"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="UserAuthenticationController.html"><span class="name">UserAuthenticationController</span></a><span class="result"> extends <span class="extype" name="play.api.mvc.Controller">Controller</span> with <span class="extype" name="play.api.i18n.I18nSupport">I18nSupport</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#controllers.package@UserAuthenticationControllerextendsControllerwithI18nSupport" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This controller creates an <code>Action</code> that demonstrates how to write
+simple asynchronous code in a controller.</p><div class="fullcomment"><div class="comment cmt"><p>This controller creates an <code>Action</code> that demonstrates how to write
+simple asynchronous code in a controller. It uses a timer to
+asynchronously delay sending a response for 1 second.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@Singleton</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="controllers.routes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="routesextendsObject"></a>
       <a id="routes:routes"></a>

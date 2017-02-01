@@ -1,10 +1,9 @@
-2017-01-30 17:17:51,016 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-01-30 17:17:52,830 [ERROR] from application in application-akka.actor.default-dispatcher-2 - 
+2017-02-01 17:33:27,933 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-02-01 17:33:29,639 [ERROR] from application in application-akka.actor.default-dispatcher-3 - 
 
-! @72pi72ajk - Internal server error, for (GET) [/] ->
+! @7306n77nc - Internal server error, for (GET) [/] ->
  
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[PSQLException: ERROR: relation "Tweets" does not exist
-  Position: 103]]
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[SQLTransientConnectionException: db - Connection is not available, request timed out after 1000ms.]]
 	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
 	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
 	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
@@ -51,18 +50,17 @@ play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[PSQLExcep
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: org.postgresql.util.PSQLException: ERROR: relation "Tweets" does not exist
-  Position: 103
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
-	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:168)
-	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:157)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at slick.jdbc.StatementInvoker.results(StatementInvoker.scala:39)
+Caused by: java.sql.SQLTransientConnectionException: db - Connection is not available, request timed out after 1000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:548)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:186)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:145)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:83)
+	at slick.jdbc.hikaricp.HikariCPJdbcDataSource.createConnection(HikariCPJdbcDataSource.scala:12)
+	at slick.jdbc.JdbcBackend$BaseSession.conn$lzycompute(JdbcBackend.scala:415)
+	at slick.jdbc.JdbcBackend$BaseSession.conn(JdbcBackend.scala:414)
+	at slick.jdbc.JdbcBackend$SessionDef$class.prepareStatement(JdbcBackend.scala:297)
+	at slick.jdbc.JdbcBackend$BaseSession.prepareStatement(JdbcBackend.scala:407)
+	at slick.jdbc.StatementInvoker.results(StatementInvoker.scala:33)
 	at slick.jdbc.StatementInvoker.iteratorTo(StatementInvoker.scala:22)
 	at slick.jdbc.Invoker$class.foreach(Invoker.scala:48)
 	at slick.jdbc.StatementInvoker.foreach(StatementInvoker.scala:16)
@@ -74,13 +72,55 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "Tweets" does not 
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2017-01-30 17:19:08,168 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
-2017-01-30 17:19:08,419 [ERROR] from application in application-akka.actor.default-dispatcher-5 - 
+2017-02-01 18:14:00,490 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-02-01 18:14:47,732 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-02-01 18:15:21,418 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2017-02-01 18:16:24,893 [ERROR] from application in netty-event-loop-9 - 
 
-! @72pi76ifm - Internal server error, for (GET) [/] ->
+! @73072nl8n - Internal server error, for (GET) [/] ->
  
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[PSQLException: ERROR: column "account_id" does not exist
-  Position: 85]]
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error['<-' expected but '}' found.]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:159)
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$56$2$.unpickle(Serializers.scala:175)
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$66$2$.unpickle(Serializers.scala:181)
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79)
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$66$2$.unpickleEntry(Serializers.scala:181)
+	at scala.pickling.functions$.unpickle(functions.scala:11)
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104)
+	at scala.util.Try$.apply(Try.scala:192)
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104)
+	at sbt.protocol.BuildValue.value(Values.scala:11)
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65)
+	at sbt.protocol.TaskResult$class.result(Values.scala:56)
+	at sbt.protocol.TaskSuccess.result(Values.scala:62)
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:198)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:153)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2017-02-01 18:16:44,523 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2017-02-01 18:20:13,809 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-12 - Application started (Dev)
+2017-02-01 18:23:23,788 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2017-02-01 18:23:53,081 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-02-01 18:23:53,086 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 18:53:47,644 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2017-02-01 18:53:47,649 [DEBUG] from application in application-akka.actor.default-dispatcher-5 - landing
+2017-02-01 18:53:50,025 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - reached here : 69
+2017-02-01 18:53:50,027 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - reached here : 76
+2017-02-01 18:53:50,027 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - reached here
+2017-02-01 18:53:50,296 [ERROR] from application in application-akka.actor.default-dispatcher-4 - 
+
+! @73077lf1b - Internal server error, for (POST) [/posttweet] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[PSQLException: ERROR: insert or update on table "tweets" violates foreign key constraint "tweet_owner_id"
+  Detail: Key (tweet_owner_id)=(1) is not present in table "accounts".]]
 	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
 	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
 	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
@@ -127,27 +167,40 @@ play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[PSQLExcep
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: org.postgresql.util.PSQLException: ERROR: column "account_id" does not exist
-  Position: 85
+Caused by: org.postgresql.util.PSQLException: ERROR: insert or update on table "tweets" violates foreign key constraint "tweet_owner_id"
+  Detail: Key (tweet_owner_id)=(1) is not present in table "accounts".
 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:168)
-	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:157)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at slick.jdbc.StatementInvoker.results(StatementInvoker.scala:39)
-	at slick.jdbc.StatementInvoker.iteratorTo(StatementInvoker.scala:22)
-	at slick.jdbc.Invoker$class.foreach(Invoker.scala:48)
-	at slick.jdbc.StatementInvoker.foreach(StatementInvoker.scala:16)
-	at slick.jdbc.StreamingInvokerAction$class.run(StreamingInvokerAction.scala:22)
-	at slick.driver.JdbcActionComponent$QueryActionExtensionMethodsImpl$$anon$1.run(JdbcActionComponent.scala:218)
-	at slick.driver.JdbcActionComponent$QueryActionExtensionMethodsImpl$$anon$1.run(JdbcActionComponent.scala:218)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:135)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at slick.driver.JdbcActionComponent$InsertActionComposerImpl$SingleInsertAction$$anonfun$run$7.apply(JdbcActionComponent.scala:507)
+	at slick.driver.JdbcActionComponent$InsertActionComposerImpl$SingleInsertAction$$anonfun$run$7.apply(JdbcActionComponent.scala:504)
+	at slick.jdbc.JdbcBackend$SessionDef$class.withPreparedInsertStatement(JdbcBackend.scala:354)
+	at slick.jdbc.JdbcBackend$BaseSession.withPreparedInsertStatement(JdbcBackend.scala:407)
+	at slick.driver.JdbcActionComponent$ReturningInsertActionComposerImpl.preparedInsert(JdbcActionComponent.scala:636)
+	at slick.driver.JdbcActionComponent$InsertActionComposerImpl$SingleInsertAction.run(JdbcActionComponent.scala:504)
+	at slick.driver.JdbcActionComponent$SimpleJdbcDriverAction.run(JdbcActionComponent.scala:32)
+	at slick.driver.JdbcActionComponent$SimpleJdbcDriverAction.run(JdbcActionComponent.scala:29)
 	at slick.backend.DatabaseComponent$DatabaseDef$$anon$2.liftedTree1$1(DatabaseComponent.scala:237)
 	at slick.backend.DatabaseComponent$DatabaseDef$$anon$2.run(DatabaseComponent.scala:237)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2017-01-30 17:23:23,041 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2017-02-01 18:54:09,153 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - landing
+2017-02-01 18:54:16,474 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 18:54:19,675 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - reached here : 69
+2017-02-01 18:54:19,676 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - reached here : 76
+2017-02-01 18:54:19,676 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - reached here
+2017-02-01 18:54:19,862 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - landing
+2017-02-01 18:54:34,550 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - reached here : 69
+2017-02-01 18:54:34,551 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - reached here : 76
+2017-02-01 18:54:34,551 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - reached here
+2017-02-01 18:54:34,734 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - landing
+2017-02-01 18:54:36,143 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 18:54:38,229 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 18:54:38,912 [DEBUG] from application in application-akka.actor.default-dispatcher-15 - landing

@@ -1,0 +1,11 @@
+
+@import views.viewForms.tweetForm
+@import b3.vertical.fieldConstructor  // Declares a vertical field constructor as default
+
+@(tweet: Form[tweetForm])(implicit messages: Messages)
+@b3.form(routes.PageController.postTweet()) {
+    @b3.textarea( tweet("tweetText"), '_label -> "Tweet", '_rows -> "3")
+    @b3.text( tweet("hashtags"), '_label -> "Hashtags")
+    @b3.text( tweet("location"), '_label -> "Locations")
+    @b3.submit('class -> "btn btn-default"){ Tweet }
+}

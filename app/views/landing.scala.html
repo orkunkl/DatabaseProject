@@ -1,7 +1,12 @@
-@import views.viewForms.userAuthForm
 @import models.User
+@import views.viewForms.tweetForm
 
-@(content: Html)(implicit messages: Messages)
+@(user: Option[User], tweets: List[Tweet],tweet: Form[tweetForm])(implicit messages: Messages)
 
-
-    @content
+@user match {
+    case Some(user) => {@tweetPost(tweet)}
+    case None => {}
+}
+@for(tweet <- tweets){
+    @tweetView(tweet)
+}

@@ -1,1 +1,45 @@
-[0m[[0mdebug[0m] [0mJar uptodate: /home/orkun/Workspace/DatabaseProject/target/scala-2.11/databaseproject_2.11-1.0-SNAPSHOT-sources.jar[0m
+[0m[[0minfo[0m] [0mPackaging /home/orkun/Workspace/DatabaseProject/target/scala-2.11/databaseproject_2.11-1.0-SNAPSHOT-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	models/Like.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/models/Like.scala[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/conf/application.conf[0m
+[0m[[0mdebug[0m] [0m	models/Hashtag.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/models/Hashtag.scala[0m
+[0m[[0mdebug[0m] [0m	models/Tweet.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/models/Tweet.scala[0m
+[0m[[0mdebug[0m] [0m	logback.xml[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/conf/logback.xml[0m
+[0m[[0mdebug[0m] [0m	Filters.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/Filters.scala[0m
+[0m[[0mdebug[0m] [0m	DatabaseInitializer.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/DatabaseInitializer.scala[0m
+[0m[[0mdebug[0m] [0m	models/Trend.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/models/Trend.scala[0m
+[0m[[0mdebug[0m] [0m	views/viewForms/userAuthForm.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/views/viewForms/userAuthForm.scala[0m
+[0m[[0mdebug[0m] [0m	controllers/PageController.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/controllers/PageController.scala[0m
+[0m[[0mdebug[0m] [0m	DAO/DatabaseControllerTrait.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/DAO/DatabaseControllerTrait.scala[0m
+[0m[[0mdebug[0m] [0m	models/Location.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/models/Location.scala[0m
+[0m[[0mdebug[0m] [0m	controllers/UserAuthenticationController.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/controllers/UserAuthenticationController.scala[0m
+[0m[[0mdebug[0m] [0m	DAO/CreateDDL.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/DAO/CreateDDL.scala[0m
+[0m[[0mdebug[0m] [0m	models/User.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/models/User.scala[0m
+[0m[[0mdebug[0m] [0m	views/viewForms/tweetForm.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/views/viewForms/tweetForm.scala[0m
+[0m[[0mdebug[0m] [0m	models/HashtagTweetRelation.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/models/HashtagTweetRelation.scala[0m
+[0m[[0mdebug[0m] [0m	routes[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/conf/routes[0m
+[0m[[0mdebug[0m] [0m	filters/ExampleFilter.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/filters/ExampleFilter.scala[0m
+[0m[[0mdebug[0m] [0m	DAO/SlickDatabaseMapping.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/DAO/SlickDatabaseMapping.scala[0m
+[0m[[0mdebug[0m] [0m	DAO/DatabaseController.scala[0m
+[0m[[0mdebug[0m] [0m	  /home/orkun/Workspace/DatabaseProject/app/DAO/DatabaseController.scala[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

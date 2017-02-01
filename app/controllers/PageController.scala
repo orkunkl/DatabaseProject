@@ -1,19 +1,22 @@
 package controllers
 
+import java.util.Calendar
+
 import akka.actor.ActorSystem
 import javax.inject._
 
 import DAO.DatabaseController
-import models.User
+import models._
 import play.api._
+import play.api.Logger
 import play.api.data.Form
 import play.api.mvc._
 import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
-import play.twirl.api.Html
-import views.html.tweetContent
-import views.viewForms.userAuthForm
+import views.viewForms.tweetForm
 
+import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
 import scala.concurrent.{ExecutionContext, Future, Promise}
 import scala.concurrent.duration._
 
@@ -37,22 +40,78 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
     *
     * */
   def landing = Action.async { implicit request =>
-    val tweets = DatabaseController.getTweets()
+    Logger.debug("landing")
+    val tweets = DatabaseController.getTweets
     val result = for {
       account_id <- request.session.get("accountID")   //***** burası giriş
       username <-  request.session.get("username")
     } yield {
-      val user = User(Some(account_id.toInt), username,"",0)
+      val user = User(Some(account_id.toInt), username, "")
 
       tweets.map{tweets =>
         Ok(views.html.index(webJarAssets, Some(user),
-        views.html.landing(tweetContent(tweets))))}
+        views.html.landing(Some(user), tweets, tweetViewForm)))}
     }
     result.getOrElse(
       tweets.map{tweets =>
         Ok(views.html.index(webJarAssets, None,
-          views.html.landing(tweetContent(tweets))))}
+          views.html.landing(None, tweets, tweetViewForm)))}
     )
   }
 
+  val tweetViewForm = Form(
+    mapping(
+      "tweetText" -> text,
+      "hashtags" -> text,
+      "location" -> text
+    )(tweetForm.apply)(tweetForm.unapply)
+  )
+
+  def postTweet = Action.async(parse.form(tweetViewForm)) { implicit request =>
+    Logger.debug("reached here : 69")
+    val auth: Option[Future[Result]] = for {
+      accountID <- request.session.get("accountID")
+      username <- request.session.get("username")
+    } yield {
+      val tweetinfo = request.body
+      val hashtagIDs = ArrayBuffer[Int]()
+      /** This part is for adding new hashtags*/
+      Logger.debug("reached here : 76")
+      if(!tweetinfo.hashtags.isEmpty){
+        tweetinfo.hashtags.replaceAll("\\s", "").split(",").foreach { hashtag =>
+          DatabaseController.checkHashtag(hashtag).flatMap{
+            _ match {
+              case Some(found) => Logger.debug("reached here : 80"); Future("zuhaha")
+              case None => Logger.debug("reached here : 81"); DatabaseController.insertHashtag(Hashtag(None, new java.sql.Date(Calendar.getInstance().getTime().getTime()), hashtag)).map(id => hashtagIDs += id)
+            }
+          }
+        }
+      }
+      Logger.debug("reached here")
+      /** This part is for location detecting and insering*/
+      if(!tweetinfo.location.isEmpty)
+        DatabaseController.getLocation(tweetinfo.location).flatMap {
+          _ match {
+            case None => DatabaseController.insertLocation(Location(None, tweetinfo.location)).flatMap{ location =>
+              DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, Some(location))).map{_ =>
+                Redirect(routes.PageController.landing())
+              }
+            }
+          }
+        }
+      else
+        DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, None)).flatMap { tweetID =>
+          DatabaseController.insertRelation(hashtagIDs.map(id => HashtagTweetRelation(tweetID,id))).map{ _ =>
+            Redirect(routes.PageController.landing())
+          }
+        }
+    }
+    auth.getOrElse{
+      Future(Redirect(routes.PageController.landing()))
+    }
+  }
+
+  def likeTweet = Action.async { implicit request =>
+    Future(Ok(""))
+  }
 }

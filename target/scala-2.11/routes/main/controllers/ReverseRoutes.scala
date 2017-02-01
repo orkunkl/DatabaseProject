@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Mon Jan 30 16:52:21 CET 2017
+// @DATE:Wed Feb 01 19:24:10 CET 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -19,22 +19,34 @@ package controllers {
     }
 
   
+    // @LINE:22
+    def likeTweet(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "likeTweet")
+    }
+  
     // @LINE:10
     def landing(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix)
     }
   
+    // @LINE:20
+    def postTweet(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "posttweet")
+    }
+  
   }
 
-  // @LINE:23
+  // @LINE:28
   class ReverseWebJarAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:23
+    // @LINE:28
     def at(file:String): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "webjars/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -62,7 +74,7 @@ package controllers {
     }
   
     // @LINE:14
-    def authenticate(): Call = {
+    def authenticatePage(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "authenticate")
     }
@@ -75,14 +87,14 @@ package controllers {
   
   }
 
-  // @LINE:20
+  // @LINE:25
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:20
+    // @LINE:25
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))

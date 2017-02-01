@@ -41,7 +41,7 @@ class UserAuthenticationController @Inject()(actorSystem: ActorSystem, DatabaseC
   )
   def signInNewUser = Action.async(parse.form(userAuth)) { implicit request =>
     val userCredentials = request.body
-    DatabaseController.addNewUser(User(None, userCredentials.username, userCredentials.password, 0)).map { user =>
+    DatabaseController.addNewUser(User(None, userCredentials.username, userCredentials.password)).map { user =>
       Redirect(routes.PageController.landing).withSession("accountID" -> user.accountID.get.toString, "username" -> user.username)
     }
   }
@@ -71,7 +71,7 @@ class UserAuthenticationController @Inject()(actorSystem: ActorSystem, DatabaseC
     Future(Redirect(routes.PageController.landing).withNewSession)
   }
 
-  def authenticate = Action.async {
+  def authenticatePage = Action.async {
     Future(Ok(views.html.index(webJarAssets, None, views.html.authenticate(userAuth, userAuth))))
   }
 
