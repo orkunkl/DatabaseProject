@@ -13,7 +13,7 @@ import play.api.data.Form
 import play.api.mvc._
 import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
-import views.viewForms.tweetForm
+import views.viewForms.{LikeForm, tweetForm}
 
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
@@ -111,7 +111,46 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
     }
   }
 
-  def likeTweet = Action.async { implicit request =>
+
+  val newLike = Form(
+    mapping(
+      "tweetID" -> number,
+      "likerID" -> number,
+      "postOwnerID" -> number
+    )(LikeForm.apply)(LikeForm.unapply)
+  )
+  def likeTweet = Action.async(parse.form(newLike)) { implicit request =>
+    val auth: Option[Future[Result]] = for {
+      accountID <- request.session.get("accountID")
+      username <- request.session.get("username")
+    } yield {
+      val tweetinfo = request.body
+      DatabaseController.likeTweet(Like(tweetinfo.tweetID,tweetinfo.likerID,tweetinfo.postOwnerID, new java.sql.Date(Calendar.getInstance().getTime().getTime()))).map{
+        _ => Redirect(routes.PageController.landing())
+      }
+    }
+    auth.getOrElse(
+      Future(Redirect(routes.PageController.landing()))
+    )
+  }
+  def showSettings = Action.async { implicit request =>
+    Future(Ok(views.html.index(webJarAssets, None, views.html.settingsPage())))
+  }
+  val newCommentForm = Form(
+    mapping(
+      "tweetID" -> number,
+      "commentOwnerID" -> number,
+      "postOwnerID" -> number
+    )(LikeForm.apply)(LikeForm.unapply))
+
+  def makeComment = Action.async { implicit request =>
+    val auth: Option[Future[Result]] = for {
+      accountID <- request.session.get("accountID")
+      username <- request.session.get("username")
+    } yield {
+
+      Future(Ok(""))
+    }
     Future(Ok(""))
   }
 }

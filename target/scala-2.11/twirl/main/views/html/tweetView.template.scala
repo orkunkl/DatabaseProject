@@ -24,11 +24,11 @@ class tweetView extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,F
     _display_ {
       {
 
-implicit def /*3.2*/implicitFieldConstructor/*3.26*/ = {{ b3.horizontal.fieldConstructor("col-md-2", "col-md-10") }};
-Seq[Any](format.raw/*2.16*/("""
-"""),format.raw/*3.89*/("""  """),format.raw/*3.91*/("""// Declares a horizontal field constructor as default
 
-<form class="form-horizontal">
+Seq[Any](format.raw/*2.16*/("""
+
+
+"""),format.raw/*5.1*/("""<form class="form-horizontal">
     <div class="form-group">
         <label class="col-sm-2 control-label">Account Name</label>
         <div class="col-sm-10">
@@ -97,11 +97,11 @@ Seq[Any](format.raw/*2.16*/("""
 object tweetView extends tweetView_Scope0.tweetView_Scope1.tweetView
               /*
                   -- GENERATED --
-                  DATE: Wed Feb 01 19:24:09 CET 2017
+                  DATE: Wed Feb 01 21:11:24 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/tweetView.scala.html
-                  HASH: c4e7e1dbd915e5fe1ba1654024d9d17e92f49953
-                  MATRIX: 586->22|687->38|719->62|812->36|840->125|869->127|1126->358|1139->363|1174->378|1210->387|1394->544|1408->549|1439->559|1475->568|2472->1537|2501->1538|2537->1547|2697->1680|2725->1681|2753->1682
-                  LINES: 23->2|27->3|27->3|28->2|29->3|29->3|35->9|35->9|35->9|36->10|42->16|42->16|42->16|43->17|75->49|75->49|76->50|78->52|78->52|79->53
+                  HASH: cd38a4c7fb33935fd0ed8455357524591b694540
+                  MATRIX: 586->22|695->36|724->39|926->215|939->220|974->235|1010->244|1194->401|1208->406|1239->416|1275->425|2272->1394|2301->1395|2337->1404|2497->1537|2525->1538|2553->1539
+                  LINES: 23->2|28->2|31->5|35->9|35->9|35->9|36->10|42->16|42->16|42->16|43->17|75->49|75->49|76->50|78->52|78->52|79->53
                   -- GENERATED --
               */
           

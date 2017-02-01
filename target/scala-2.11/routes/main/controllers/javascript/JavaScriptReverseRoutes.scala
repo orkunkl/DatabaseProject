@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Wed Feb 01 19:24:10 CET 2017
+// @DATE:Wed Feb 01 21:20:23 CET 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -22,7 +22,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:22
+    // @LINE:26
     def likeTweet: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PageController.likeTweet",
       """
@@ -42,7 +42,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:20
+    // @LINE:24
     def postTweet: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PageController.postTweet",
       """
@@ -52,9 +52,19 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:22
+    def showSettings: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PageController.showSettings",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "showsettings"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:28
+  // @LINE:32
   class ReverseWebJarAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -62,7 +72,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:28
+    // @LINE:32
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.WebJarAssets.at",
       """
@@ -92,6 +102,26 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:20
+    def deleteAccount: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserAuthenticationController.deleteAccount",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "deleteaccount"})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def logOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserAuthenticationController.logOut",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
+        }
+      """
+    )
+  
     // @LINE:18
     def logInUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserAuthenticationController.logInUser",
@@ -112,19 +142,9 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
-    def logOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.UserAuthenticationController.logOut",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
-        }
-      """
-    )
-  
   }
 
-  // @LINE:25
+  // @LINE:29
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -132,7 +152,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:25
+    // @LINE:29
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

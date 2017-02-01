@@ -15,6 +15,7 @@ trait DatabaseControllerTrait {
     * */
   def addNewUser(user: User): Future[User]
   def searchUser(username: String) : Future[Option[User]]
+  def deleteAccount(accoutID: Int) : Future[Unit]
 
   /**
     * Tweet table
@@ -43,5 +44,10 @@ trait DatabaseControllerTrait {
     * Like Table
     **/
   def likeTweet (like: Like) : Future[Unit]
+
+  /**
+    *   Comment Table
+    * */
+  def insertComment (comment: Comment): Future[Unit]
 
 }

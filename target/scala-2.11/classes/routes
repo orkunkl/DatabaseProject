@@ -17,7 +17,13 @@ POST    /signin                     controllers.UserAuthenticationController.sig
 
 POST    /login                      controllers.UserAuthenticationController.logInUser
 
+GET     /deleteaccount              controllers.UserAuthenticationController.deleteAccount
+
+GET     /showsettings               controllers.PageController.showSettings
+
 POST    /posttweet                  controllers.PageController.postTweet
+
+POST    /likeTweet                  controllers.PageController.likeTweet
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

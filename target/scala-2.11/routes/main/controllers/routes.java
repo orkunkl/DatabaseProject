@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Wed Feb 01 19:24:10 CET 2017
+// @DATE:Wed Feb 01 21:20:23 CET 2017
 
 package controllers;
 

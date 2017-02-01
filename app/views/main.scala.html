@@ -22,8 +22,10 @@
                 <form class="nav navbar-nav pull-right">
                     @user match {
                         case None => {<li><a href="/authenticate">Register or Login</a></li>}
+
                         case Some(u) => {
-                            <li>Hello @u.username</li>
+                            <li><a>Hello @u.username</a></li>
+                            <li><a href="@routes.PageController.showSettings">Settings </a></li>
                             <li><a href="/logout">Log out</a></li>
                         }
                     }
