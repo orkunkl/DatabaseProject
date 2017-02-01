@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2017-02-01 21:41:12,345 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
 2017-02-01 21:41:12,967 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
 2017-02-01 21:41:19,735 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - reached here : asdbool : false
@@ -2651,3 +2652,20 @@ play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation erro
 2017-02-01 22:47:18,949 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
 2017-02-01 22:47:32,836 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
 2017-02-01 22:47:39,073 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+=======
+2017-02-01 22:43:51,020 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-02-01T21:43:51.018Z.
+2017-02-01 22:43:51,454 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-02-01 22:43:51,500 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 22:45:12,164 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - landing
+2017-02-01 22:45:52,038 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Stopping application at 2017-02-01T21:45:52.038Z after 121s.
+2017-02-01 22:45:52,254 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Starting application at 2017-02-01T21:45:52.253Z.
+2017-02-01 22:45:52,376 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-13 - Application started (Dev)
+2017-02-01 22:45:52,381 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 22:46:03,308 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 22:46:05,372 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 22:46:08,141 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
+2017-02-01 22:46:12,524 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 22:46:16,556 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
+>>>>>>> developmentFurkan2
+2017-02-01 22:49:13,471 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-02-01 22:49:13,474 [DEBUG] from application in application-akka.actor.default-dispatcher-5 - landing
