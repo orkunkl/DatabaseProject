@@ -35,7 +35,7 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" onclick="showBox@tweet.tweetID ()" class="btn btn-default" id="showCommentBox">Comment</button>
+                <button type="button" onclick="showBox(@tweet.tweetID)" class="btn btn-default" id="showCommentBox@tweet.tweetID">Comment</button>
             </div>
         </div>
 
@@ -55,10 +55,3 @@
             </div>
         </div>
     </form>
-
-<script>
-    function showBox@tweet.tweetID () {
-        document.getElementById("commentArea@tweet.tweetID").style.visibility = "visible";
-        document.getElementById("showCommentBox").remove();
-    }
-</script>

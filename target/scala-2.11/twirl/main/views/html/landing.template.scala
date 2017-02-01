@@ -53,7 +53,15 @@ Seq[Any](format.raw/*4.95*/("""
         <li class="list-group-item">Second item</li>
         <li class="list-group-item">Third item</li>
     </ul>
-</div>"""))
+</div>
+
+<script>
+        function showBox (boxNo) """),format.raw/*37.34*/("""{"""),format.raw/*37.35*/("""
+            """),format.raw/*38.13*/("""document.getElementById("commentArea" + boxNo).style.visibility = "visible";
+            document.getElementById("showCommentBox" + boxNo).remove();
+        """),format.raw/*40.9*/("""}"""),format.raw/*40.10*/("""
+"""),format.raw/*41.1*/("""</script>
+"""))
       }
     }
   }
@@ -74,11 +82,11 @@ Seq[Any](format.raw/*4.95*/("""
 object landing extends landing_Scope0.landing_Scope1.landing
               /*
                   -- GENERATED --
-                  DATE: Wed Feb 01 21:34:18 CET 2017
+                  DATE: Wed Feb 01 22:45:50 CET 2017
                   SOURCE: /home/furkan/Desktop/DatabaseProject/app/views/landing.scala.html
-                  HASH: b0fd93f115aa0856f643bc234a1637b8abb1c5a8
-                  MATRIX: 656->56|844->149|872->151|922->176|933->180|947->186|956->193|982->211|1012->214|1039->236|1060->248|1084->253|1112->255|1148->275|1187->276|1219->282|1256->298|1288->300|1317->302
-                  LINES: 24->4|29->4|31->6|33->8|33->8|33->8|33->9|33->9|33->9|33->10|33->10|33->11|34->12|34->12|34->12|35->13|35->13|36->14|38->16
+                  HASH: 043c7722c5dd8d2b3040b2beaafe9e12c1c91905
+                  MATRIX: 656->56|844->149|872->151|922->176|933->180|947->186|956->193|982->211|1012->214|1039->236|1060->248|1084->253|1112->255|1148->275|1187->276|1219->282|1256->298|1288->300|1317->302|1891->848|1920->849|1961->862|2145->1019|2174->1020|2202->1021
+                  LINES: 24->4|29->4|31->6|33->8|33->8|33->8|33->9|33->9|33->9|33->10|33->10|33->11|34->12|34->12|34->12|35->13|35->13|36->14|38->16|59->37|59->37|60->38|62->40|62->40|63->41
                   -- GENERATED --
               */
           

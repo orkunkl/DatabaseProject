@@ -32,3 +32,10 @@
         <li class="list-group-item">Third item</li>
     </ul>
 </div>
+
+<script>
+        function showBox (boxNo) {
+            document.getElementById("commentArea" + boxNo).style.visibility = "visible";
+            document.getElementById("showCommentBox" + boxNo).remove();
+        }
+</script>
