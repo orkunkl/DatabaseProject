@@ -49,8 +49,7 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *
     * */
 
-
-  override def insertHashtag (hashtag: Hashtag): Future[Int] = db.run(HashtagTable.returning(HashtagTable.map(_.hashtagID)) += hashtag)
+  override def insertHashtag (hashtag: Hashtag): Future[Int] = db.run(HashtagTable.returning(HashtagTable.map(hashtag => hashtag.hashtagID)) += hashtag)
   override def checkHashtag (hashtag: String) : Future[Option[Hashtag]] = db.run(HashtagTable.filter(_.hashtagName===hashtag).result.headOption)
 
   /**
@@ -83,7 +82,12 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *
     * */
 
-  override def insertRelation (hashtagTweetRelation: ArrayBuffer[HashtagTweetRelation]) : Future[Unit] = db.run(HashtagTweetRelationTable ++= hashtagTweetRelation).map { _ => ()}
+  override def insertRelation (hashtagTweetRelation: ArrayBuffer[HashtagTweetRelation]) : Future[Unit] = {
+    if(!hashtagTweetRelation.isEmpty)
+      db.run(HashtagTweetRelationTable ++= hashtagTweetRelation).map { _ => ()}
+    else
+      Future(Unit)
+  }
 
   /**
     *

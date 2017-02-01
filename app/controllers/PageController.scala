@@ -50,7 +50,8 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
 
       tweets.map{tweets =>
         Ok(views.html.index(webJarAssets, Some(user),
-        views.html.landing(Some(user), tweets, tweetViewForm)))}
+          views.html.landing(Some(user), tweets, tweetViewForm)))
+      }
     }
     result.getOrElse(
       tweets.map{tweets =>
@@ -68,7 +69,6 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
   )
 
   def postTweet = Action.async(parse.form(tweetViewForm)) { implicit request =>
-    Logger.debug("reached here : 69")
     val auth: Option[Future[Result]] = for {
       accountID <- request.session.get("accountID")
       username <- request.session.get("username")
@@ -76,13 +76,15 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
       val tweetinfo = request.body
       val hashtagIDs = ArrayBuffer[Int]()
       /** This part is for adding new hashtags*/
-      Logger.debug("reached here : 76")
+      Logger.debug("reached here : " + tweetinfo.hashtags + "bool : " + tweetinfo.hashtags.isEmpty)
       if(!tweetinfo.hashtags.isEmpty){
         tweetinfo.hashtags.replaceAll("\\s", "").split(",").foreach { hashtag =>
           DatabaseController.checkHashtag(hashtag).flatMap{
             _ match {
-              case Some(found) => Logger.debug("reached here : 80"); Future("zuhaha")
-              case None => Logger.debug("reached here : 81"); DatabaseController.insertHashtag(Hashtag(None, new java.sql.Date(Calendar.getInstance().getTime().getTime()), hashtag)).map(id => hashtagIDs += id)
+              case Some(found) => Logger.debug("reached here : 80"); Future(hashtagIDs += found.hashtagID.get)
+              case None => DatabaseController.insertHashtag(Hashtag(None, new java.sql.Date(Calendar.getInstance().getTime().getTime()), hashtag)).map(
+                id => {Logger.debug("reached here : 87 , id: " + id ); hashtagIDs += id }
+              )
             }
           }
         }
@@ -93,10 +95,18 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
         DatabaseController.getLocation(tweetinfo.location).flatMap {
           _ match {
             case None => DatabaseController.insertLocation(Location(None, tweetinfo.location)).flatMap{ location =>
-              DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, Some(location))).map{_ =>
-                Redirect(routes.PageController.landing())
+              DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, Some(location))).flatMap{tweetID =>
+                DatabaseController.insertRelation(hashtagIDs.map(id => HashtagTweetRelation(tweetID,id))).map{ _ =>
+                  Redirect(routes.PageController.landing())
+                }
               }
             }
+            case Some(location) =>
+              DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, location.locationID)).flatMap{ tweetID =>
+                DatabaseController.insertRelation(hashtagIDs.map(id => HashtagTweetRelation(tweetID,id))).map{ _ =>
+                  Redirect(routes.PageController.landing())
+                }
+              }
           }
         }
       else

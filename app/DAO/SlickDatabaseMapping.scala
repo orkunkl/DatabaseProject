@@ -47,7 +47,7 @@ trait SlickDatabaseMapping { self: HasDatabaseConfigProvider[JdbcProfile] =>
 
   val LocationTable = TableQuery[LocationTable]
 
-  class LocationTable(tag: Tag) extends Table[Location](tag, "locations") {
+  class LocationTable(tag: Tag) extends Table[Location](tag, "location") {
 
     def locationID = column[Int]("location_id", O.PrimaryKey, O.AutoInc)
     def name = column[String]("name")
