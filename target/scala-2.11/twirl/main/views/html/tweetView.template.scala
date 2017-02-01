@@ -61,12 +61,12 @@ Seq[Any](format.raw/*2.16*/("""
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" onclick="showBox()" class="btn btn-default" id="showCommentBox">Comment</button>
+                <button type="button" onclick="showBox"""),_display_(/*38.56*/tweet/*38.61*/.tweetID),format.raw/*38.69*/(""" """),format.raw/*38.70*/("""()" class="btn btn-default" id="showCommentBox">Comment</button>
             </div>
         </div>
 
 
-        <div id="commentArea" style="visibility: hidden">
+        <div id="commentArea"""),_display_(/*43.30*/tweet/*43.35*/.tweetID),format.raw/*43.43*/("""" style="visibility: hidden">
             <div class="form-group">
                 <label class="col-sm-2 control-label">Comment</label>
                 <div class="col-sm-10">
@@ -83,8 +83,8 @@ Seq[Any](format.raw/*2.16*/("""
     </form>
 
 <script>
-    function showBox() """),format.raw/*60.24*/("""{"""),format.raw/*60.25*/("""
-        """),format.raw/*61.9*/("""document.getElementById("commentArea").style.visibility = "visible";
+    function showBox"""),_display_(/*60.22*/tweet/*60.27*/.tweetID),format.raw/*60.35*/(""" """),format.raw/*60.36*/("""() """),format.raw/*60.39*/("""{"""),format.raw/*60.40*/("""
+        """),format.raw/*61.9*/("""document.getElementById("commentArea"""),_display_(/*61.46*/tweet/*61.51*/.tweetID),format.raw/*61.59*/("""").style.visibility = "visible";
         document.getElementById("showCommentBox").remove();
     """),format.raw/*63.5*/("""}"""),format.raw/*63.6*/("""
 """),format.raw/*64.1*/("""</script>"""))
@@ -108,11 +108,11 @@ Seq[Any](format.raw/*2.16*/("""
 object tweetView extends tweetView_Scope0.tweetView_Scope1.tweetView
               /*
                   -- GENERATED --
-                  DATE: Wed Feb 01 21:33:46 CET 2017
+                  DATE: Wed Feb 01 21:51:13 CET 2017
                   SOURCE: /home/furkan/Desktop/DatabaseProject/app/views/tweetView.scala.html
-                  HASH: 78085283ba0415418969a155b226a8b9f9ef5e96
-                  MATRIX: 586->22|687->38|719->62|812->36|840->125|869->127|1076->308|1089->313|1124->328|1159->337|1324->475|1338->480|1369->490|1405->499|1541->608|1555->613|1589->626|1671->681|1685->686|1714->694|2043->996|2057->1001|2091->1014|2173->1069|2187->1074|2216->1082|3114->1952|3143->1953|3179->1962|3339->2095|3367->2096|3395->2097
-                  LINES: 23->2|27->3|27->3|28->2|29->3|29->3|34->8|34->8|34->8|35->9|41->15|41->15|41->15|42->16|47->21|47->21|47->21|48->22|48->22|48->22|59->33|59->33|59->33|60->34|60->34|60->34|86->60|86->60|87->61|89->63|89->63|90->64
+                  HASH: 45f15264e91ed2ebd5669f8419db9ffdfa7e73db
+                  MATRIX: 586->22|687->38|719->62|812->36|840->125|869->127|1076->308|1089->313|1124->328|1159->337|1324->475|1338->480|1369->490|1405->499|1541->608|1555->613|1589->626|1671->681|1685->686|1714->694|2043->996|2057->1001|2091->1014|2173->1069|2187->1074|2216->1082|2387->1226|2401->1231|2430->1239|2459->1240|2616->1370|2630->1375|2659->1383|3282->1979|3296->1984|3325->1992|3354->1993|3385->1996|3414->1997|3450->2006|3514->2043|3528->2048|3557->2056|3681->2153|3709->2154|3737->2155
+                  LINES: 23->2|27->3|27->3|28->2|29->3|29->3|34->8|34->8|34->8|35->9|41->15|41->15|41->15|42->16|47->21|47->21|47->21|48->22|48->22|48->22|59->33|59->33|59->33|60->34|60->34|60->34|64->38|64->38|64->38|64->38|69->43|69->43|69->43|86->60|86->60|86->60|86->60|86->60|86->60|87->61|87->61|87->61|87->61|89->63|89->63|90->64
                   -- GENERATED --
               */
           
