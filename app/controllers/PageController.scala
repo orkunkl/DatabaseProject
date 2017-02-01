@@ -13,7 +13,7 @@ import play.api.data.Form
 import play.api.mvc._
 import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
-import views.viewForms.tweetForm
+import views.viewForms.{LikeForm, tweetForm}
 
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
@@ -50,7 +50,8 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
 
       tweets.map{tweets =>
         Ok(views.html.index(webJarAssets, Some(user),
-        views.html.landing(Some(user), tweets, tweetViewForm)))}
+          views.html.landing(Some(user), tweets, tweetViewForm)))
+      }
     }
     result.getOrElse(
       tweets.map{tweets =>
@@ -68,7 +69,6 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
   )
 
   def postTweet = Action.async(parse.form(tweetViewForm)) { implicit request =>
-    Logger.debug("reached here : 69")
     val auth: Option[Future[Result]] = for {
       accountID <- request.session.get("accountID")
       username <- request.session.get("username")
@@ -76,13 +76,15 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
       val tweetinfo = request.body
       val hashtagIDs = ArrayBuffer[Int]()
       /** This part is for adding new hashtags*/
-      Logger.debug("reached here : 76")
+      Logger.debug("reached here : " + tweetinfo.hashtags + "bool : " + tweetinfo.hashtags.isEmpty)
       if(!tweetinfo.hashtags.isEmpty){
         tweetinfo.hashtags.replaceAll("\\s", "").split(",").foreach { hashtag =>
           DatabaseController.checkHashtag(hashtag).flatMap{
             _ match {
-              case Some(found) => Logger.debug("reached here : 80"); Future("zuhaha")
-              case None => Logger.debug("reached here : 81"); DatabaseController.insertHashtag(Hashtag(None, new java.sql.Date(Calendar.getInstance().getTime().getTime()), hashtag)).map(id => hashtagIDs += id)
+              case Some(found) => Logger.debug("reached here : 80"); Future(hashtagIDs += found.hashtagID.get)
+              case None => DatabaseController.insertHashtag(Hashtag(None, new java.sql.Date(Calendar.getInstance().getTime().getTime()), hashtag)).map(
+                id => {Logger.debug("reached here : 87 , id: " + id ); hashtagIDs += id }
+              )
             }
           }
         }
@@ -93,10 +95,18 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
         DatabaseController.getLocation(tweetinfo.location).flatMap {
           _ match {
             case None => DatabaseController.insertLocation(Location(None, tweetinfo.location)).flatMap{ location =>
-              DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, Some(location))).map{_ =>
-                Redirect(routes.PageController.landing())
+              DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, Some(location))).flatMap{tweetID =>
+                DatabaseController.insertRelation(hashtagIDs.map(id => HashtagTweetRelation(tweetID,id))).map{ _ =>
+                  Redirect(routes.PageController.landing())
+                }
               }
             }
+            case Some(location) =>
+              DatabaseController.insertTweet(Tweet(None, accountID.toInt, username, tweetinfo.tweetText, location.locationID)).flatMap{ tweetID =>
+                DatabaseController.insertRelation(hashtagIDs.map(id => HashtagTweetRelation(tweetID,id))).map{ _ =>
+                  Redirect(routes.PageController.landing())
+                }
+              }
           }
         }
       else
@@ -111,7 +121,46 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
     }
   }
 
-  def likeTweet = Action.async { implicit request =>
+
+  val newLike = Form(
+    mapping(
+      "tweetID" -> number,
+      "likerID" -> number,
+      "postOwnerID" -> number
+    )(LikeForm.apply)(LikeForm.unapply)
+  )
+  def likeTweet = Action.async(parse.form(newLike)) { implicit request =>
+    val auth: Option[Future[Result]] = for {
+      accountID <- request.session.get("accountID")
+      username <- request.session.get("username")
+    } yield {
+      val tweetinfo = request.body
+      DatabaseController.likeTweet(Like(tweetinfo.tweetID,tweetinfo.likerID,tweetinfo.postOwnerID, new java.sql.Date(Calendar.getInstance().getTime().getTime()))).map{
+        _ => Redirect(routes.PageController.landing())
+      }
+    }
+    auth.getOrElse(
+      Future(Redirect(routes.PageController.landing()))
+    )
+  }
+  def showSettings = Action.async { implicit request =>
+    Future(Ok(views.html.index(webJarAssets, None, views.html.settingsPage())))
+  }
+  val newCommentForm = Form(
+    mapping(
+      "tweetID" -> number,
+      "commentOwnerID" -> number,
+      "postOwnerID" -> number
+    )(LikeForm.apply)(LikeForm.unapply))
+
+  def makeComment = Action.async { implicit request =>
+    val auth: Option[Future[Result]] = for {
+      accountID <- request.session.get("accountID")
+      username <- request.session.get("username")
+    } yield {
+
+      Future(Ok(""))
+    }
     Future(Ok(""))
   }
 }

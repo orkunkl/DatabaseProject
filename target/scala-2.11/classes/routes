@@ -17,6 +17,10 @@ POST    /signin                     controllers.UserAuthenticationController.sig
 
 POST    /login                      controllers.UserAuthenticationController.logInUser
 
+GET     /deleteaccount              controllers.UserAuthenticationController.deleteAccount
+
+GET     /showsettings               controllers.PageController.showSettings
+
 POST    /posttweet                  controllers.PageController.postTweet
 
 POST    /likeTweet                  controllers.PageController.likeTweet

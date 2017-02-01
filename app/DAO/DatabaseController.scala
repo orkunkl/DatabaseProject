@@ -29,6 +29,7 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
 
   override def searchUser(username: String): Future[Option[User]] = db.run(AccountTable.filter(_.username===username).result.headOption)
 
+  override def deleteAccount(accoutID: Int) : Future[Unit] = db.run(AccountTable.filter(_.accountID === accoutID).delete).map { _ => ()}
 
   /**
     *
@@ -48,9 +49,8 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *
     * */
 
-
-  override def insertHashtag (hashtag: Hashtag): Future[Int] = db.run(HashtagTable.returning(HashtagTable.map(_.hashtagID)) += hashtag)
-  override def checkHashtag(hashtag: String) : Future[Option[Hashtag]] = db.run(HashtagTable.filter(_.hashtagName===hashtag).result.headOption)
+  override def insertHashtag (hashtag: Hashtag): Future[Int] = db.run(HashtagTable.returning(HashtagTable.map(hashtag => hashtag.hashtagID)) += hashtag)
+  override def checkHashtag (hashtag: String) : Future[Option[Hashtag]] = db.run(HashtagTable.filter(_.hashtagName===hashtag).result.headOption)
 
   /**
     *
@@ -82,7 +82,18 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *
     * */
 
+  override def insertRelation (hashtagTweetRelation: ArrayBuffer[HashtagTweetRelation]) : Future[Unit] = {
+    if(!hashtagTweetRelation.isEmpty)
+      db.run(HashtagTweetRelationTable ++= hashtagTweetRelation).map { _ => ()}
+    else
+      Future(Unit)
+  }
 
-  override def insertRelation (hashtagTweetRelation: ArrayBuffer[HashtagTweetRelation]) : Future[Unit] = db.run(HashtagTweetRelationTable ++= hashtagTweetRelation).map { _ => ()}
+  /**
+    *
+    *   COMMENT RELATED THINGS
+    *
+    * */
 
+  override def insertComment (comment: Comment): Future[Unit] = db.run(CommentTable += comment).map { _ => ()}
 }

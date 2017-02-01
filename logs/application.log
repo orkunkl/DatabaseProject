@@ -1,13 +1,50 @@
-2017-02-01 22:43:51,020 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-02-01T21:43:51.018Z.
-2017-02-01 22:43:51,454 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-02-01 22:43:51,500 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
-2017-02-01 22:45:12,164 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - landing
-2017-02-01 22:45:52,038 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Stopping application at 2017-02-01T21:45:52.038Z after 121s.
-2017-02-01 22:45:52,254 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Starting application at 2017-02-01T21:45:52.253Z.
-2017-02-01 22:45:52,376 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-13 - Application started (Dev)
-2017-02-01 22:45:52,381 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
-2017-02-01 22:46:03,308 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
-2017-02-01 22:46:05,372 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
-2017-02-01 22:46:08,141 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
-2017-02-01 22:46:12,524 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
-2017-02-01 22:46:16,556 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
+2017-02-01 21:41:12,345 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-02-01 21:41:12,967 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 21:41:19,735 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - reached here : asdbool : false
+2017-02-01 21:41:19,749 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - reached here
+2017-02-01 21:41:19,933 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 21:45:30,687 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2017-02-01 21:45:30,693 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - landing
+2017-02-01 21:45:36,044 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - reached here : fasdbool : false
+2017-02-01 21:45:36,051 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - reached here
+2017-02-01 21:45:36,142 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - landing
+2017-02-01 21:49:33,454 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2017-02-01 21:49:33,464 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 21:49:33,464 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - landing
+2017-02-01 21:49:36,561 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - landing
+2017-02-01 21:49:42,193 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - reached here : asdfbool : false
+2017-02-01 21:49:42,199 [DEBUG] from application in application-akka.actor.default-dispatcher-2 - reached here
+2017-02-01 21:49:42,275 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 21:56:22,946 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2017-02-01 21:56:22,950 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 21:56:29,120 [DEBUG] from application in application-akka.actor.default-dispatcher-5 - reached here : webool : false
+2017-02-01 21:56:29,124 [DEBUG] from application in application-akka.actor.default-dispatcher-5 - reached here
+2017-02-01 21:56:29,342 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 21:58:43,976 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - landing
+2017-02-01 21:58:48,018 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - reached here : fsbool : false
+2017-02-01 21:58:48,022 [DEBUG] from application in application-akka.actor.default-dispatcher-8 - reached here
+2017-02-01 21:58:48,147 [DEBUG] from application in application-akka.actor.default-dispatcher-11 - landing
+2017-02-01 22:00:27,931 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2017-02-01 22:00:27,934 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - landing
+2017-02-01 22:00:34,841 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - reached here : wqwbool : false
+2017-02-01 22:00:34,845 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - reached here
+2017-02-01 22:00:34,951 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 22:08:30,630 [DEBUG] from application in application-akka.actor.default-dispatcher-11 - landing
+2017-02-01 22:08:33,566 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
+2017-02-01 22:08:39,420 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
+2017-02-01 22:08:44,104 [DEBUG] from application in application-akka.actor.default-dispatcher-15 - reached here : fasbool : false
+2017-02-01 22:08:44,107 [DEBUG] from application in application-akka.actor.default-dispatcher-15 - reached here
+2017-02-01 22:08:44,220 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - landing
+2017-02-01 22:08:44,243 [DEBUG] from application in application-akka.actor.default-dispatcher-12 - reached here : 87 , id: 1
+2017-02-01 22:11:55,084 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-14 - Application started (Dev)
+2017-02-01 22:11:55,090 [DEBUG] from application in application-akka.actor.default-dispatcher-5 - landing
+2017-02-01 22:12:04,215 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - reached here : assbool : false
+2017-02-01 22:12:04,220 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - reached here
+2017-02-01 22:12:04,297 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - reached here : 87 , id: 2
+2017-02-01 22:12:04,325 [DEBUG] from application in application-akka.actor.default-dispatcher-5 - landing
+2017-02-01 22:40:28,521 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2017-02-01 22:40:28,525 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 22:40:34,582 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - reached here : sdbool : false
+2017-02-01 22:40:34,586 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - reached here
+2017-02-01 22:40:34,682 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - landing
+2017-02-01 22:40:34,697 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - reached here : 87 , id: 3

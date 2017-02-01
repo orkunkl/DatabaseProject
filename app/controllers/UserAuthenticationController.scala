@@ -1,10 +1,11 @@
 package controllers
 
+import java.util.Calendar
 import javax.inject._
 
 import DAO.DatabaseController
 import akka.actor.ActorSystem
-import models.User
+import models.{Like, User}
 import play.api.data.Form
 import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
@@ -75,4 +76,17 @@ class UserAuthenticationController @Inject()(actorSystem: ActorSystem, DatabaseC
     Future(Ok(views.html.index(webJarAssets, None, views.html.authenticate(userAuth, userAuth))))
   }
 
+  def deleteAccount = Action.async { implicit request =>
+    val auth: Option[Future[Result]] = for {
+      accountID <- request.session.get("accountID")
+      username <- request.session.get("username")
+    } yield {
+      DatabaseController.deleteAccount(accountID.toInt).map { _ =>
+        Redirect(routes.PageController.landing()).withNewSession
+      }
+    }
+    auth.getOrElse(
+      Future(Redirect(routes.PageController.landing()))
+    )
+  }
 }
