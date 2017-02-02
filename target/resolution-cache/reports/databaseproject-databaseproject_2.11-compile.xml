@@ -7,8 +7,44 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-		date="20170201224904"/>
+		date="20170202120504"/>
 	<dependencies>
+		<module organisation="com.enragedginger" name="akka-quartz-scheduler_2.11">
+			<revision name="1.6.0-akka-2.4.x" status="release" pubdate="20161125170824" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/enragedginger/akka-quartz-scheduler" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="106">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3890" time="0" location="/home/orkun/.ivy2/cache/com.enragedginger/akka-quartz-scheduler_2.11/ivy-1.6.0-akka-2.4.x.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/enragedginger/akka-quartz-scheduler_2.11/1.6.0-akka-2.4.x/akka-quartz-scheduler_2.11-1.6.0-akka-2.4.x.pom"/>
+				<caller organisation="databaseproject" name="databaseproject_2.11" conf="compile" rev="1.6.0-akka-2.4.x" rev-constraint-default="1.6.0-akka-2.4.x" rev-constraint-dynamic="1.6.0-akka-2.4.x" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-quartz-scheduler_2.11" type="jar" ext="jar" status="no" details="" size="91531" time="0" location="/home/orkun/.ivy2/cache/com.enragedginger/akka-quartz-scheduler_2.11/jars/akka-quartz-scheduler_2.11-1.6.0-akka-2.4.x.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/enragedginger/akka-quartz-scheduler_2.11/1.6.0-akka-2.4.x/akka-quartz-scheduler_2.11-1.6.0-akka-2.4.x.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.quartz-scheduler" name="quartz">
+			<revision name="2.2.3" status="release" pubdate="20160418202701" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="107">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4781" time="0" location="/home/orkun/.ivy2/cache/org.quartz-scheduler/quartz/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/quartz-scheduler/quartz/2.2.3/quartz-2.2.3.pom"/>
+				<caller organisation="com.enragedginger" name="akka-quartz-scheduler_2.11" conf="default, compile, runtime, master" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.6.0-akka-2.4.x"/>
+				<artifacts>
+					<artifact name="quartz" type="jar" ext="jar" status="no" details="" size="660483" time="0" location="/home/orkun/.ivy2/cache/org.quartz-scheduler/quartz/jars/quartz-2.2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/quartz-scheduler/quartz/2.2.3/quartz-2.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="c3p0" name="c3p0">
+			<revision name="0.9.1.1" status="release" pubdate="20070420202229" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://c3p0.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="108">
+				<license name="GNU LESSER GENERAL PUBLIC LICENSE" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="2699" time="0" location="/home/orkun/.ivy2/cache/c3p0/c3p0/ivy-0.9.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.pom"/>
+				<caller organisation="org.quartz-scheduler" name="quartz" conf="compile, runtime" rev="0.9.1.1" rev-constraint-default="0.9.1.1" rev-constraint-dynamic="0.9.1.1" callerrev="2.2.3"/>
+				<artifacts>
+					<artifact name="c3p0" type="jar" ext="jar" status="no" details="" size="608376" time="0" location="/home/orkun/.ivy2/cache/c3p0/c3p0/jars/c3p0-0.9.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.adrianhurt" name="play-bootstrap_2.11">
 			<revision name="1.1-P25-B3" status="release" pubdate="20160828205805" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://adrianhurt.github.io/play-bootstrap" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="87">
 				<license name="Apache License" url="https://github.com/adrianhurt/play-bootstrap/blob/master/LICENSE"/>
@@ -1278,6 +1314,7 @@
 				<caller organisation="org.asynchttpclient" name="netty-codec-dns" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="2.0.24"/>
 				<caller organisation="net.sf.ehcache" name="ehcache-core" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="2.6.11"/>
 				<caller organisation="com.googlecode.usc" name="jdbcdslog" conf="compile, runtime" rev="1.5.10" rev-constraint-default="1.5.10" rev-constraint-dynamic="1.5.10" callerrev="1.0.6.2"/>
+				<caller organisation="org.quartz-scheduler" name="quartz" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="2.2.3"/>
 				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="1.7.21"/>
 				<caller organisation="org.asynchttpclient" name="netty-resolver-dns" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="2.0.24"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="2.4.14"/>
@@ -1299,6 +1336,7 @@
 			</revision>
 			<revision name="1.7.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<evicted-by rev="1.7.21"/>
+				<caller organisation="org.quartz-scheduler" name="quartz" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="2.2.3"/>
 				<caller organisation="org.webjars" name="webjars-locator-core" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="0.30"/>
 				<artifacts>
 				</artifacts>
@@ -1636,6 +1674,7 @@
 				<caller organisation="databaseproject" name="databaseproject_2.11" conf="compile" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="3.1.0"/>
 				<caller organisation="com.typesafe.play" name="play-jdbc_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.5.12"/>
+				<caller organisation="com.enragedginger" name="akka-quartz-scheduler_2.11" conf="default, compile, runtime, master" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.6.0-akka-2.4.x"/>
 				<caller organisation="com.typesafe.play" name="play-server_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.5.12"/>
 				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
 				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="0.7.0"/>
@@ -1675,6 +1714,7 @@
 				<caller organisation="databaseproject" name="databaseproject_2.11" conf="compile" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="3.1.0"/>
 				<caller organisation="com.typesafe.play" name="play-jdbc_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.5.12"/>
+				<caller organisation="com.enragedginger" name="akka-quartz-scheduler_2.11" conf="default, compile, runtime, master" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.6.0-akka-2.4.x"/>
 				<caller organisation="com.typesafe.play" name="play-server_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.5.12"/>
 				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
 				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="0.7.0"/>

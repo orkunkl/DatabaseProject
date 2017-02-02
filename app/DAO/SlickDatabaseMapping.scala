@@ -63,8 +63,9 @@ trait SlickDatabaseMapping { self: HasDatabaseConfigProvider[JdbcProfile] =>
     def date = column[java.sql.Date]("date")
     def trendType = column[Boolean]("type")
     def ranking = column[Int]("ranking")
+    def trendLink = column[Int]("trend_link")
 
-    override def * = (trendID.?, date, trendType, ranking) <> (Trend.tupled, Trend.unapply)
+    override def * = (trendID.?, date, trendType, ranking, trendLink) <> (Trend.tupled, Trend.unapply)
   }
 
   val LikeTable = TableQuery[LikeTable]

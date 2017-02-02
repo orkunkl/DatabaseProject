@@ -15,7 +15,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play-slick" % "2.0.2",
   "org.postgresql" % "postgresql" % "9.4.1212.jre7",
   "com.adrianhurt" %% "play-bootstrap" % "1.1-P25-B3",
-  "org.webjars" % "bootstrap" % "3.3.6"
+  "org.webjars" % "bootstrap" % "3.3.6",
+  "com.enragedginger" %% "akka-quartz-scheduler" % "1.6.0-akka-2.4.x"
 )
 
 fork in run := true

@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-[0m[[33mwarn[0m] [0m/home/orkun/Workspace/DatabaseProject/app/controllers/PageController.scala:96: match may not be exhaustive.[0m
-[0m[[33mwarn[0m] [0mIt would fail on the following input: Some(_)[0m
-[0m[[33mwarn[0m] [0m          _ match {[0m
-[0m[[33mwarn[0m] [0m          ^[0m
+[0m[[33mwarn[0m] [0m/home/orkun/Workspace/DatabaseProject/app/services/TrendScheduler/Module.scala:3: imported `Scheduler' is permanently hidden by definition of class Scheduler in package TrendScheduler[0m
+[0m[[33mwarn[0m] [0mimport akka.actor.Scheduler[0m
+[0m[[33mwarn[0m] [0m                  ^[0m
 [0m[[33mwarn[0m] [0mone warning found[0m
-=======
-[0m[[31merror[0m] [0m/home/furkan/Desktop/DatabaseProject/app/views/tweetView.scala.html:38: Option[Int] does not take parameters[0m
-[0m[[31merror[0m] [0m                <button type="button" onclick="showBox@tweet.tweetID()" class="btn btn-default" id="showCommentBox">Comment</button>[0m
-[0m[[31merror[0m] [0m                                                                    ^[0m
-[0m[[31merror[0m] [0mone error found[0m
->>>>>>> developmentFurkan2

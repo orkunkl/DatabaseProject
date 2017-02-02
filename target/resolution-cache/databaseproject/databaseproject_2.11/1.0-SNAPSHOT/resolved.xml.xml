@@ -4,7 +4,7 @@
 		module="databaseproject_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170201224904"
+		publication="20170202120504"
 	>
 		<description>
 		databaseProject
@@ -51,5 +51,6 @@
 		<dependency org="org.postgresql" name="postgresql" rev="9.4.1212.jre7" conf="compile->default(compile)"/>
 		<dependency org="com.adrianhurt" name="play-bootstrap_2.11" rev="1.1-P25-B3" conf="compile->default(compile)"/>
 		<dependency org="org.webjars" name="bootstrap" rev="3.3.6" conf="compile->default(compile)"/>
+		<dependency org="com.enragedginger" name="akka-quartz-scheduler_2.11" rev="1.6.0-akka-2.4.x" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

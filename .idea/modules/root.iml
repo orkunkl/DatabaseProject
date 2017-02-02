@@ -176,5 +176,8 @@
     <orderEntry type="library" name="SBT: org.webjars:bootstrap:3.3.7-1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.webjars:jquery:2.2.4:jar" level="project" />
     <orderEntry type="library" name="SBT: org.yaml:snakeyaml:1.16:jar" level="project" />
+    <orderEntry type="library" name="SBT: c3p0:c3p0:0.9.1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.enragedginger:akka-quartz-scheduler_2.11:1.6.0-akka-2.4.x:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.quartz-scheduler:quartz:2.2.3:jar" level="project" />
   </component>
 </module>
