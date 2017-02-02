@@ -16,7 +16,7 @@ import play.api.i18n.{I18nSupport, MessagesApi}
 import views.viewForms.{LikeForm, tweetForm}
 
 import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.concurrent.{ExecutionContext, Future, Promise}
 import scala.concurrent.duration._
 
@@ -41,22 +41,35 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
     * */
   def landing = Action.async { implicit request =>
     Logger.debug("landing")
+
     val tweets = DatabaseController.getTweets
+    val trendHashtagsFuture = DatabaseController.getTrendHashtag
+    val trendTweetsFuture = DatabaseController.getTrendTweet
+
     val result = for {
       account_id <- request.session.get("accountID")   //***** burası giriş
       username <-  request.session.get("username")
     } yield {
       val user = User(Some(account_id.toInt), username, "")
 
-      tweets.map{tweets =>
-        Ok(views.html.index(webJarAssets, Some(user),
-          views.html.landing(Some(user), tweets, tweetViewForm)))
+      tweets.flatMap{tweets =>
+        trendHashtagsFuture.flatMap { trendhashtags =>
+          trendTweetsFuture.map { trendtweets =>
+            Ok(views.html.index(webJarAssets, Some(user),
+              views.html.landing(Some(user), tweets, tweetViewForm, trendtweets, trendhashtags)))
+          }
+        }
       }
     }
     result.getOrElse(
-      tweets.map{tweets =>
-        Ok(views.html.index(webJarAssets, None,
-          views.html.landing(None, tweets, tweetViewForm)))}
+      tweets.flatMap{tweets =>
+        trendHashtagsFuture.flatMap { trendhashtags =>
+          trendTweetsFuture.map { trendtweets =>
+            Ok(views.html.index(webJarAssets, None,
+              views.html.landing(None, tweets, tweetViewForm, trendtweets, trendhashtags)))
+          }
+        }
+      }
     )
   }
 
@@ -69,9 +82,11 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
   )
 
   def postTweet = Action.async(parse.form(tweetViewForm)) { implicit request =>
+
     val auth: Option[Future[Result]] = for {
       accountID <- request.session.get("accountID")
       username <- request.session.get("username")
+
     } yield {
       val tweetinfo = request.body
       val hashtagIDs = ArrayBuffer[Int]()
@@ -161,6 +176,27 @@ class PageController @Inject()(actorSystem: ActorSystem, DatabaseController: Dat
 
       Future(Ok(""))
     }
+    Future(Ok(""))
+  }
+
+  def showHashtag(hashtagID: Int) = Action.async { implicit request =>
+    /*
+    val tweets = new  ListBuffer[Tweet]
+    val auth: Option[Future[Result]] = for {
+      accountID <- request.session.get("accountID")
+      username <- request.session.get("username")
+    } yield {
+      val user = User(Some(accountID.toInt), username, "")
+      DatabaseController.getRelations(hashtagID).flatMap(relations =>
+        relations.map(relation =>
+          DatabaseController.getTweetByID(relation.tweetID)
+        )
+      )
+      val asdf = relations.map(relation => DatabaseController.getTweetByID(relation.tweetID))
+      Ok(views.html.index(webJarAssets, Some(user), views.html.showHashtag(tweets)))
+
+    }
+    */
     Future(Ok(""))
   }
 }

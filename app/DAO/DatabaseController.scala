@@ -36,11 +36,9 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *
     * */
 
-
-
   override def getTweets : Future[List[Tweet]] = db.run(TweetsTable.result).map(_.toList)
   override def insertTweet(tweet: Tweet): Future[Int] = db.run(TweetsTable.returning(TweetsTable.map(tweet => tweet.tweetID)) += tweet)
-  def getTweetByID(tweetID : Int) : Future[Tweet] = db.run(TweetsTable.filter(_.tweetID === tweetID).result.headOption).map(_.get)
+  override def getTweetByID(tweetID : Int) : Future[Tweet] = db.run(TweetsTable.filter(_.tweetID === tweetID).result.headOption).map(_.get)
   /**
     *
     *   HASHTAG RELATED THINGS
@@ -49,7 +47,7 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
 
   override def insertHashtag (hashtag: Hashtag): Future[Int] = db.run(HashtagTable.returning(HashtagTable.map(hashtag => hashtag.hashtagID)) += hashtag)
   override def checkHashtag (hashtag: String) : Future[Option[Hashtag]] = db.run(HashtagTable.filter(_.hashtagName===hashtag).result.headOption)
-  def getHashtagByID (hashtagID: Int) : Future[Hashtag] = db.run(HashtagTable.filter(_.hashtagID === hashtagID).result.headOption).map(_.get)
+  override def getHashtagByID (hashtagID: Int) : Future[Hashtag] = db.run(HashtagTable.filter(_.hashtagID === hashtagID).result.headOption).map(_.get)
   /**
     *
     *   LOCATION RELATED THINGS
@@ -65,10 +63,12 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     *   TRENDS RELATED THINGS
     *
     * */
+  override def getTrendHashtag : Future[Seq[Trend]] = db.run(TrendTable.filter(_.trendType === false).result)
+  override def getTrendTweet : Future[Seq[Trend]] = db.run(TrendTable.filter(_.trendType === true).result)
 
-  def insertTrends (trends: Seq[Trend]): Future[Unit] = db.run(TrendTable ++= trends).map { _ => () }
+  override def insertTrends (trends: Seq[Trend]): Future[Unit] = db.run(TrendTable ++= trends).map { _ => () }
 
-  def getTop10Hashtag : Future[Seq[Hashtag]] = {
+  override def getTop10Hashtag : Future[Seq[Hashtag]] = {
     for{
       query <- db.run(TrendTable.filter(_.trendType===false).sortBy(_.ranking.desc).take(10).result)
     } yield {
@@ -78,7 +78,7 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     }
    }
 
-  def getTop10Tweets : Future[Seq[Tweet]] ={
+  override def getTop10Tweets : Future[Seq[Tweet]] ={
     for{
       query <- db.run(TrendTable.filter(_.trendType===true).sortBy(_.ranking.desc).take(5).result)
     } yield {
@@ -107,6 +107,7 @@ class DatabaseController @Inject()(protected val dbConfigProvider: DatabaseConfi
     else
       Future(Unit)
   }
+  override def getRelations (hashtagID: Int): Future[Seq[HashtagTweetRelation]] = db.run(HashtagTweetRelationTable.filter(_.hashtagID === hashtagID).result)
 
   /**
     *

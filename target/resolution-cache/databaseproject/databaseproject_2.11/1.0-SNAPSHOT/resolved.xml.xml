@@ -4,11 +4,7 @@
 		module="databaseproject_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-<<<<<<< HEAD
-		publication="20170202120504"
-=======
-		publication="20170201223835"
->>>>>>> developmentFurkan2
+		publication="20170202142444"
 	>
 		<description>
 		databaseProject

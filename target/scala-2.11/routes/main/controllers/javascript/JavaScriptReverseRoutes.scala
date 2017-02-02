@@ -1,12 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-<<<<<<< HEAD
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
-// @DATE:Wed Feb 01 22:46:38 CET 2017
-=======
-// @SOURCE:/home/furkan/Desktop/DatabaseProject/conf/routes
-// @DATE:Wed Feb 01 19:33:40 CET 2017
->>>>>>> developmentFurkan2
+// @DATE:Thu Feb 02 14:40:34 CET 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -27,12 +22,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:22
-    def likeTweet: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.PageController.likeTweet",
+    // @LINE:28
+    def showHashtag: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PageController.showHashtag",
       """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "likeTweet"})
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "showhashtag/" + (""" + implicitly[PathBindable[Int]].javascriptUnbind + """)("id", id0)})
         }
       """
     )
@@ -47,7 +42,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:20
+    // @LINE:24
     def postTweet: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PageController.postTweet",
       """
@@ -57,9 +52,29 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:22
+    def showSettings: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PageController.showSettings",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "showsettings"})
+        }
+      """
+    )
+  
+    // @LINE:26
+    def likeTweet: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PageController.likeTweet",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "likeTweet"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:28
+  // @LINE:34
   class ReverseWebJarAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -67,7 +82,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:28
+    // @LINE:34
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.WebJarAssets.at",
       """
@@ -97,6 +112,26 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:20
+    def deleteAccount: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserAuthenticationController.deleteAccount",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "deleteaccount"})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def logOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserAuthenticationController.logOut",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
+        }
+      """
+    )
+  
     // @LINE:18
     def logInUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserAuthenticationController.logInUser",
@@ -117,19 +152,9 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
-    def logOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.UserAuthenticationController.logOut",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
-        }
-      """
-    )
-  
   }
 
-  // @LINE:25
+  // @LINE:31
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -137,7 +162,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:25
+    // @LINE:31
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

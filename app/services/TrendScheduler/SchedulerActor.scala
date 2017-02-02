@@ -28,14 +28,14 @@ class SchedulerActor @Inject() (Database: DatabaseController)(implicit ex: Execu
       var rankCounter = 0
       val trendTweets: Seq[Trend] = tweets.map( tweet => {
         rankCounter += 1
-        Trend(None,new java.sql.Date(Calendar.getInstance().getTime().getTime()), false, rankCounter, tweet.tweetID.get)
+        Trend(None,new java.sql.Date(Calendar.getInstance().getTime().getTime()), false, rankCounter, tweet.tweetID.get, tweet.tweetOwnerName)
       })
       Database.insertTrends(trendTweets)
 
       rankCounter = 0
       val trendHashtags = hashtags.map( hashtag => {
         rankCounter += 1
-        Trend(None,new java.sql.Date(Calendar.getInstance().getTime().getTime()), false, rankCounter, hashtag.hashtagID.get)
+        Trend(None,new java.sql.Date(Calendar.getInstance().getTime().getTime()), false, rankCounter, hashtag.hashtagID.get, hashtag.hashtagName)
       })
     }
   }

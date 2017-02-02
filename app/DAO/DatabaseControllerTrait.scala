@@ -22,6 +22,14 @@ trait DatabaseControllerTrait {
     */
   def getTweets : Future[List[Tweet]]
   def insertTweet(tweet: Tweet): Future[Int]
+  def getTweetByID(tweetID : Int) : Future[Tweet]
+  /**
+    *   Trend Table
+    * */
+  def getTrendHashtag : Future[Seq[Trend]]
+  def getTrendTweet : Future[Seq[Trend]]
+  def insertTrends (trends: Seq[Trend]): Future[Unit]
+  def getTop10Hashtag : Future[Seq[Hashtag]]
 
   /**
     *   Hashtag Table
@@ -39,6 +47,7 @@ trait DatabaseControllerTrait {
     *   Hashtag-Tweet Relation Table
     * */
   def insertRelation (hashtagTweetRelation: ArrayBuffer[HashtagTweetRelation]) : Future[Unit]
+  def getRelations (hashtagID: Int): Future[Seq[HashtagTweetRelation]]
 
   /**
     * Like Table

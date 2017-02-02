@@ -25,6 +25,8 @@ POST    /posttweet                  controllers.PageController.postTweet
 
 POST    /likeTweet                  controllers.PageController.likeTweet
 
+GET     /showhashtag/:id             controllers.PageController.showHashtag(id: Int)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 

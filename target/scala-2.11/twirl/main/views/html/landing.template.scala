@@ -16,17 +16,18 @@ import play.api.data._
 
      object landing_Scope1 {
 import models.User
+import models.Trend
 import views.viewForms.tweetForm
 
-class landing extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template4[Option[User],List[Tweet],Form[tweetForm],Messages,play.twirl.api.HtmlFormat.Appendable] {
+class landing extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template6[Option[User],List[Tweet],Form[tweetForm],Seq[Trend],Seq[Trend],Messages,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*4.2*/(user: Option[User], tweets: List[Tweet],tweet: Form[tweetForm])(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*4.2*/(user: Option[User], tweets: List[Tweet],tweet: Form[tweetForm], trendTweets: Seq[Trend], trendHashtags: Seq[Trend])(implicit messages: Messages):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*4.95*/("""
+Seq[Any](format.raw/*4.147*/("""
 
 """),format.raw/*6.1*/("""<div class="col-md-8">
 
@@ -40,19 +41,19 @@ Seq[Any](format.raw/*4.95*/("""
 <div class="col-md-4">
     <h2>Hashtags</h2>
     <ul class="list-group">
-        <li class="list-group-item">First item</li>
-        <li class="list-group-item">Second item</li>
-        <li class="list-group-item">Third item</li>
-    </ul>
+        """),_display_(/*21.10*/for(trend <- trendHashtags) yield /*21.37*/{_display_(Seq[Any](format.raw/*21.38*/("""
+            """),format.raw/*22.13*/("""<li class="list-group-item"><a href=""""),_display_(/*22.51*/routes/*22.57*/.PageController.showHashtag(trend.trendID.get)),format.raw/*22.103*/("""">"""),_display_(/*22.106*/trend/*22.111*/.trendName),format.raw/*22.121*/("""</a></li>
+        """)))}),format.raw/*23.10*/("""
+    """),format.raw/*24.5*/("""</ul>
 </div>
 
 <div class="col-md-4">
-    <h2>Hashtags</h2>
+    <h2>Tweets</h2>
     <ul class="list-group">
-        <li class="list-group-item">First item</li>
-        <li class="list-group-item">Second item</li>
-        <li class="list-group-item">Third item</li>
-    </ul>
+        """),_display_(/*30.10*/for(trend <- trendTweets) yield /*30.35*/{_display_(Seq[Any](format.raw/*30.36*/("""
+            """),format.raw/*31.13*/("""<li class="list-group-item"><a href=""""),_display_(/*31.51*/routes/*31.57*/.PageController.showHashtag(trend.trendID.get)),format.raw/*31.103*/("""">"""),_display_(/*31.106*/trend/*31.111*/.trendName),format.raw/*31.121*/("""</a></li>
+        """)))}),format.raw/*32.10*/("""
+    """),format.raw/*33.5*/("""</ul>
 </div>
 
 <script>
@@ -66,9 +67,9 @@ Seq[Any](format.raw/*4.95*/("""
     }
   }
 
-  def render(user:Option[User],tweets:List[Tweet],tweet:Form[tweetForm],messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(user,tweets,tweet)(messages)
+  def render(user:Option[User],tweets:List[Tweet],tweet:Form[tweetForm],trendTweets:Seq[Trend],trendHashtags:Seq[Trend],messages:Messages): play.twirl.api.HtmlFormat.Appendable = apply(user,tweets,tweet,trendTweets,trendHashtags)(messages)
 
-  def f:((Option[User],List[Tweet],Form[tweetForm]) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (user,tweets,tweet) => (messages) => apply(user,tweets,tweet)(messages)
+  def f:((Option[User],List[Tweet],Form[tweetForm],Seq[Trend],Seq[Trend]) => (Messages) => play.twirl.api.HtmlFormat.Appendable) = (user,tweets,tweet,trendTweets,trendHashtags) => (messages) => apply(user,tweets,tweet,trendTweets,trendHashtags)(messages)
 
   def ref: this.type = this
 
@@ -82,11 +83,11 @@ Seq[Any](format.raw/*4.95*/("""
 object landing extends landing_Scope0.landing_Scope1.landing
               /*
                   -- GENERATED --
-                  DATE: Wed Feb 01 22:49:04 CET 2017
+                  DATE: Thu Feb 02 15:24:09 CET 2017
                   SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/landing.scala.html
-                  HASH: 043c7722c5dd8d2b3040b2beaafe9e12c1c91905
-                  MATRIX: 656->56|844->149|872->151|922->176|933->180|947->186|956->193|982->211|1012->214|1039->236|1060->248|1084->253|1112->255|1148->275|1187->276|1219->282|1256->298|1288->300|1317->302|1891->848|1920->849|1961->862|2145->1019|2174->1020|2202->1021
-                  LINES: 24->4|29->4|31->6|33->8|33->8|33->8|33->9|33->9|33->9|33->10|33->10|33->11|34->12|34->12|34->12|35->13|35->13|36->14|38->16|59->37|59->37|60->38|62->40|62->40|63->41
+                  HASH: 24ab6100c526a04fb7d2418d839f428874b9fdb7
+                  MATRIX: 698->76|939->221|967->223|1017->248|1028->252|1042->258|1051->265|1077->283|1107->286|1134->308|1155->320|1179->325|1207->327|1243->347|1282->348|1314->354|1351->370|1383->372|1412->374|1529->464|1572->491|1611->492|1652->505|1717->543|1732->549|1800->595|1831->598|1846->603|1878->613|1928->632|1960->637|2081->731|2122->756|2161->757|2202->770|2267->808|2282->814|2350->860|2381->863|2396->868|2428->878|2478->897|2510->902|2594->958|2623->959|2664->972|2848->1129|2877->1130|2905->1131
+                  LINES: 25->4|30->4|32->6|34->8|34->8|34->8|34->9|34->9|34->9|34->10|34->10|34->11|35->12|35->12|35->12|36->13|36->13|37->14|39->16|44->21|44->21|44->21|45->22|45->22|45->22|45->22|45->22|45->22|45->22|46->23|47->24|53->30|53->30|53->30|54->31|54->31|54->31|54->31|54->31|54->31|54->31|55->32|56->33|60->37|60->37|61->38|63->40|63->40|64->41
                   -- GENERATED --
               */
           

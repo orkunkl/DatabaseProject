@@ -7,11 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-<<<<<<< HEAD
-		date="20170202120504"/>
-=======
-		date="20170201223835"/>
->>>>>>> developmentFurkan2
+		date="20170202142444"/>
 	<dependencies>
 		<module organisation="com.enragedginger" name="akka-quartz-scheduler_2.11">
 			<revision name="1.6.0-akka-2.4.x" status="release" pubdate="20161125170824" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/enragedginger/akka-quartz-scheduler" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="106">

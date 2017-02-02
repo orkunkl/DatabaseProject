@@ -1,0 +1,5 @@
+@(Tweets : Seq[Tweet])
+
+@for(tweet <- Tweets){
+    @tweetView(tweet)
+}
