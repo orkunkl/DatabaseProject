@@ -1,7 +1,4 @@
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/showHashtag.scala.html:7: not found: value trend[0m
-[0m[[31merror[0m] [0m            <li class="list-group-item"><a href="@routes.PageController.showHashtag(trend.trendID.get)">@trend.trendName</a></li>[0m
-[0m[[31merror[0m] [0m                                                                                    ^[0m
-[0m[[31merror[0m] [0m/home/orkun/Workspace/DatabaseProject/app/views/showHashtag.scala.html:7: not found: value trend[0m
-[0m[[31merror[0m] [0m            <li class="list-group-item"><a href="@routes.PageController.showHashtag(trend.trendID.get)">@trend.trendName</a></li>[0m
-[0m[[31merror[0m] [0m                                                                                                         ^[0m
-[0m[[31merror[0m] [0mtwo errors found[0m
+[0m[[33mwarn[0m] [0m/home/orkun/Workspace/DatabaseProject/app/services/TrendScheduler/Module.scala:3: imported `Scheduler' is permanently hidden by definition of class Scheduler in package TrendScheduler[0m
+[0m[[33mwarn[0m] [0mimport akka.actor.Scheduler[0m
+[0m[[33mwarn[0m] [0m                  ^[0m
+[0m[[33mwarn[0m] [0mone warning found[0m

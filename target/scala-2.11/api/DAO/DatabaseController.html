@@ -90,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="DAO.DatabaseController#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(dbConfigProvider:play.api.db.slick.DatabaseConfigProvider):DAO.DatabaseController"></a>
+      <a id="&lt;init&gt;(dbConfigProvider:play.api.db.slick.DatabaseConfigProvider,system:akka.actor.ActorSystem):DAO.DatabaseController"></a>
       <a id="&lt;init&gt;:DatabaseController"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,10 +98,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DatabaseController</span><span class="params">(<span name="dbConfigProvider">dbConfigProvider: <span class="extype" name="play.api.db.slick.DatabaseConfigProvider">DatabaseConfigProvider</span></span>)</span>
+        <span class="name">DatabaseController</span><span class="params">(<span name="dbConfigProvider">dbConfigProvider: <span class="extype" name="play.api.db.slick.DatabaseConfigProvider">DatabaseConfigProvider</span></span>, <span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#DAO.DatabaseController@&lt;init&gt;(dbConfigProvider:play.api.db.slick.DatabaseConfigProvider):DAO.DatabaseController" title="Permalink" target="_top">
+      <a href="../index.html#DAO.DatabaseController@&lt;init&gt;(dbConfigProvider:play.api.db.slick.DatabaseConfigProvider,system:akka.actor.ActorSystem):DAO.DatabaseController" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -127,6 +127,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../index.html#DAO.SlickDatabaseMapping@AccountsTableextendsslick.driver.PostgresDriver.api.Table[models.User]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SlickDatabaseMapping.html" class="extype" name="DAO.SlickDatabaseMapping">SlickDatabaseMapping</a></dd></dl></div>
+    </li><li name="DAO.SlickDatabaseMapping.CommentTable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CommentTableextendsslick.driver.PostgresDriver.api.Table[models.Comment]"></a>
+      <a id="CommentTable:(SlickDatabaseMapping.this)#CommentTable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SlickDatabaseMapping$CommentTable.html"><span class="name">CommentTable</span></a><span class="result"> extends <span class="extype" name="slick.profile.RelationalProfile.API.Table">slick.driver.JdbcProfile.API.Table</span>[<a href="../models/Comment.html" class="extype" name="models.Comment">Comment</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.SlickDatabaseMapping@CommentTableextendsslick.driver.PostgresDriver.api.Table[models.Comment]" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -304,6 +321,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../index.html#DAO.DatabaseController@AccountTable:slick.lifted.TableQuery[SlickDatabaseMapping.this.AccountsTable]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SlickDatabaseMapping.html" class="extype" name="DAO.SlickDatabaseMapping">SlickDatabaseMapping</a></dd></dl></div>
+    </li><li name="DAO.SlickDatabaseMapping#CommentTable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CommentTable:slick.lifted.TableQuery[SlickDatabaseMapping.this.CommentTable]"></a>
+      <a id="CommentTable:TableQuery[CommentTable]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CommentTable</span><span class="result">: <span class="extype" name="slick.lifted.TableQuery">TableQuery</span>[<a href="#CommentTableextendsslick.driver.PostgresDriver.api.Table[models.Comment]" class="extmbr" name="DAO.SlickDatabaseMapping.CommentTable">CommentTable</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@CommentTable:slick.lifted.TableQuery[SlickDatabaseMapping.this.CommentTable]" title="Permalink" target="_top">
         <img src="../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -535,6 +569,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → HasDatabaseConfigProvider</dd></dl></div>
+    </li><li name="DAO.DatabaseController#deleteAccount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteAccount(accoutID:Int):scala.concurrent.Future[Unit]"></a>
+      <a id="deleteAccount(Int):Future[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteAccount</span><span class="params">(<span name="accoutID">accoutID: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@deleteAccount(accoutID:Int):scala.concurrent.Future[Unit]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
     </li><li name="play.api.db.slick.HasDatabaseConfig#driver" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="driver:P"></a>
       <a id="driver:JdbcProfile"></a>
@@ -626,6 +677,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="DAO.DatabaseController#getHashtagByID" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getHashtagByID(hashtagID:Int):scala.concurrent.Future[models.Hashtag]"></a>
+      <a id="getHashtagByID(Int):Future[Hashtag]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getHashtagByID</span><span class="params">(<span name="hashtagID">hashtagID: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<a href="../models/Hashtag.html" class="extype" name="models.Hashtag">Hashtag</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@getHashtagByID(hashtagID:Int):scala.concurrent.Future[models.Hashtag]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
     </li><li name="DAO.DatabaseController#getLocation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLocation(locationName:String):scala.concurrent.Future[Option[models.Location]]"></a>
       <a id="getLocation(String):Future[Option[Location]]"></a>
@@ -643,6 +711,108 @@
       </a>
     </span>
       <p class="shortcomment cmt">  LOCATION RELATED THINGS</p><div class="fullcomment"><div class="comment cmt"><p>  LOCATION RELATED THINGS</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
+    </li><li name="DAO.DatabaseController#getRelations" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getRelations(hashtagID:Int):scala.concurrent.Future[Seq[models.HashtagTweetRelation]]"></a>
+      <a id="getRelations(Int):Future[Seq[HashtagTweetRelation]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRelations</span><span class="params">(<span name="hashtagID">hashtagID: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/HashtagTweetRelation.html" class="extype" name="models.HashtagTweetRelation">HashtagTweetRelation</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@getRelations(hashtagID:Int):scala.concurrent.Future[Seq[models.HashtagTweetRelation]]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
+    </li><li name="DAO.DatabaseController#getTop10Hashtag" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTop10Hashtag:scala.concurrent.Future[Seq[models.Hashtag]]"></a>
+      <a id="getTop10Hashtag:Future[Seq[Hashtag]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTop10Hashtag</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/Hashtag.html" class="extype" name="models.Hashtag">Hashtag</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@getTop10Hashtag:scala.concurrent.Future[Seq[models.Hashtag]]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
+    </li><li name="DAO.DatabaseController#getTop10Tweets" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTop10Tweets:scala.concurrent.Future[Seq[models.Tweet]]"></a>
+      <a id="getTop10Tweets:Future[Seq[Tweet]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTop10Tweets</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/Tweet.html" class="extype" name="models.Tweet">Tweet</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@getTop10Tweets:scala.concurrent.Future[Seq[models.Tweet]]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
+    </li><li name="DAO.DatabaseController#getTrendHashtag" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTrendHashtag:scala.concurrent.Future[Seq[models.Trend]]"></a>
+      <a id="getTrendHashtag:Future[Seq[Trend]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTrendHashtag</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/Trend.html" class="extype" name="models.Trend">Trend</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@getTrendHashtag:scala.concurrent.Future[Seq[models.Trend]]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">  TRENDS RELATED THINGS</p><div class="fullcomment"><div class="comment cmt"><p>  TRENDS RELATED THINGS</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
+    </li><li name="DAO.DatabaseController#getTrendTweet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTrendTweet:scala.concurrent.Future[Seq[models.Trend]]"></a>
+      <a id="getTrendTweet:Future[Seq[Trend]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTrendTweet</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="../models/Trend.html" class="extype" name="models.Trend">Trend</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@getTrendTweet:scala.concurrent.Future[Seq[models.Trend]]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
+    </li><li name="DAO.DatabaseController#getTweetByID" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTweetByID(tweetID:Int):scala.concurrent.Future[models.Tweet]"></a>
+      <a id="getTweetByID(Int):Future[Tweet]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTweetByID</span><span class="params">(<span name="tweetID">tweetID: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<a href="../models/Tweet.html" class="extype" name="models.Tweet">Tweet</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@getTweetByID(tweetID:Int):scala.concurrent.Future[models.Tweet]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
     </li><li name="DAO.DatabaseController#getTweets" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getTweets:scala.concurrent.Future[List[models.Tweet]]"></a>
       <a id="getTweets:Future[List[Tweet]]"></a>
@@ -677,6 +847,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="DAO.DatabaseController#insertComment" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insertComment(comment:models.Comment):scala.concurrent.Future[Unit]"></a>
+      <a id="insertComment(Comment):Future[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">insertComment</span><span class="params">(<span name="comment">comment: <a href="../models/Comment.html" class="extype" name="models.Comment">Comment</a></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@insertComment(comment:models.Comment):scala.concurrent.Future[Unit]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">  COMMENT RELATED THINGS</p><div class="fullcomment"><div class="comment cmt"><p>  COMMENT RELATED THINGS</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
     </li><li name="DAO.DatabaseController#insertHashtag" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="insertHashtag(hashtag:models.Hashtag):scala.concurrent.Future[Int]"></a>
       <a id="insertHashtag(Hashtag):Future[Int]"></a>
@@ -728,6 +915,23 @@
       </a>
     </span>
       <p class="shortcomment cmt">  HASHTAG_TWEET_RELATION</p><div class="fullcomment"><div class="comment cmt"><p>  HASHTAG_TWEET_RELATION</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
+    </li><li name="DAO.DatabaseController#insertTrends" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insertTrends(trends:Seq[models.Trend]):scala.concurrent.Future[Unit]"></a>
+      <a id="insertTrends(Seq[Trend]):Future[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">insertTrends</span><span class="params">(<span name="trends">trends: <span class="extype" name="scala.Seq">Seq</span>[<a href="../models/Trend.html" class="extype" name="models.Trend">Trend</a>]</span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@insertTrends(trends:Seq[models.Trend]):scala.concurrent.Future[Unit]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
     </li><li name="DAO.DatabaseController#insertTweet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="insertTweet(tweet:models.Tweet):scala.concurrent.Future[Int]"></a>
       <a id="insertTweet(Tweet):Future[Int]"></a>
@@ -762,6 +966,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="DAO.DatabaseController#likeTweet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="likeTweet(like:models.Like):scala.concurrent.Future[Unit]"></a>
+      <a id="likeTweet(Like):Future[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">likeTweet</span><span class="params">(<span name="like">like: <a href="../models/Like.html" class="extype" name="models.Like">Like</a></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@likeTweet(like:models.Like):scala.concurrent.Future[Unit]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">  LIKE RELATED THINGS</p><div class="fullcomment"><div class="comment cmt"><p>  LIKE RELATED THINGS</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="DAO.DatabaseController">DatabaseController</a> → <a href="DatabaseControllerTrait.html" class="extype" name="DAO.DatabaseControllerTrait">DatabaseControllerTrait</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -847,6 +1068,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="DAO.DatabaseController#system" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="system:akka.actor.ActorSystem"></a>
+      <a id="system:ActorSystem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">system</span><span class="result">: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#DAO.DatabaseController@system:akka.actor.ActorSystem" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>

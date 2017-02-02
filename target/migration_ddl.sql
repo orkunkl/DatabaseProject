@@ -1,20 +1,69 @@
-# --- !Ups
 
-create table "accounts" ("account_id" SERIAL NOT NULL PRIMARY KEY,"username" VARCHAR NOT NULL,"password" VARCHAR NOT NULL);
-create table "tweets" ("tweet_id" SERIAL NOT NULL PRIMARY KEY,"tweet_owner_id" INTEGER NOT NULL,"tweet_owner_name" VARCHAR NOT NULL,"tweet_text" VARCHAR NOT NULL,"location_id" INTEGER NOT NULL);
-create table "trends" ("trend_id" SERIAL NOT NULL PRIMARY KEY,"date" DATE NOT NULL,"type" BOOLEAN NOT NULL,"ranking" INTEGER NOT NULL,"trend_link" INTEGER NOT NULL,"trend_name" VARCHAR NOT NULL);
-create table "location" ("location_id" SERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL);
-create table "hashtags" ("hashtag_id" SERIAL NOT NULL PRIMARY KEY,"created_date" DATE NOT NULL,"hashtag_name" VARCHAR NOT NULL);
-create table "hashtag_tweet_relation" ("tweet_id" INTEGER NOT NULL,"hashtag_id" INTEGER NOT NULL);
-create table "likes" ("tweet_id" INTEGER NOT NULL,"liker_id" INTEGER NOT NULL,"post_owner_id" INTEGER NOT NULL,"date" DATE NOT NULL);
+CREATE TABLE public.Accounts
+(
+  account_id SERIAL PRIMARY KEY,
+  username character varying,
+  password character varying
+);
 
+CREATE TABLE public.Tweets
+(
+  tweet_id SERIAL PRIMARY KEY,
+  tweet_owner_id integer,
+  tweet_owner_name character varying,
+  tweet_text character varying,
+  location_id integer,
+  CONSTRAINT tweet_owner_id FOREIGN KEY (tweet_owner_id)
+    REFERENCES public.Accounts (account_id) MATCH SIMPLE
+    ON UPDATE NO ACTION ON DELETE CASCADE
+);
 
-# --- !Downs
+CREATE TABLE public.Likes
+(
+  tweet_id integer,
+  liker_id integer,
+  post_owner_id integer,
+  date date,
+  FOREIGN KEY (liker_id) REFERENCES public.Accounts(account_id) ON DELETE CASCADE,
+  FOREIGN KEY (tweet_id) REFERENCES public.Tweets(tweet_id) ON DELETE CASCADE
+);
 
-drop table "likes";
-drop table "hashtag_tweet_relation";
-drop table "hashtags";
-drop table "location";
-drop table "trends";
-drop table "tweets";
-drop table "accounts";
+CREATE TABLE public.Hashtags
+(
+  hashtag_id SERIAL PRIMARY KEY,
+  created_date date,
+  hashtag_name character varying
+);
+
+CREATE TABLE public.Trends
+(
+  trend_id SERIAL PRIMARY KEY,
+  date date,
+  type boolean,
+  ranking integer,
+  trend_link integer,
+  FOREIGN KEY (trend_id) REFERENCES public.Hashtags(hashtag_id) ON DELETE CASCADE
+);
+
+CREATE TABLE public.Location
+(
+  Location_id SERIAL PRIMARY KEY,
+  name character varying
+);
+
+CREATE TABLE public.Comments
+(
+  comment_id SERIAL PRIMARY KEY,
+  tweet_id integer,
+  comment_owner_id integer,
+  FOREIGN KEY (tweet_id) REFERENCES public.Tweets (tweet_id) ON DELETE CASCADE,
+  FOREIGN KEY (comment_owner_id) REFERENCES public.Accounts (account_id) MATCH SIMPLE ON UPDATE CASCADE ON DELETE CASCADE
+);
+CREATE TABLE public.Hashtag_Tweet_Relation
+(
+  tweet_id integer,
+  hashtag_id integer,
+  FOREIGN KEY (tweet_id) REFERENCES public.Tweets (tweet_id) ON DELETE CASCADE,
+  FOREIGN KEY (hashtag_id) REFERENCES public.Hashtags (hashtag_id) MATCH SIMPLE ON UPDATE CASCADE ON DELETE CASCADE
+);
+

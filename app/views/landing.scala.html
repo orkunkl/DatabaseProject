@@ -21,6 +21,9 @@
         @for(trend <- trendHashtags){
             <li class="list-group-item"><a href="@routes.PageController.showHashtag(trend.trendID.get)">@trend.trendName</a></li>
         }
+        <li class="list-group-item">Barack Obama</li>
+        <li class="list-group-item">Katy</li>
+        <li class="list-group-item">Hello</li>
     </ul>
 </div>
 
@@ -30,6 +33,9 @@
         @for(trend <- trendTweets){
             <li class="list-group-item"><a href="@routes.PageController.showHashtag(trend.trendID.get)">@trend.trendName</a></li>
         }
+        <li class="list-group-item">Orkun Kulce</li>
+        <li class="list-group-item">Furkan Kaymak</li>
+        <li class="list-group-item">Max Schmidhuber</li>
     </ul>
 </div>
 

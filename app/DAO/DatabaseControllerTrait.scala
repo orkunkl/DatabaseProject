@@ -30,12 +30,13 @@ trait DatabaseControllerTrait {
   def getTrendTweet : Future[Seq[Trend]]
   def insertTrends (trends: Seq[Trend]): Future[Unit]
   def getTop10Hashtag : Future[Seq[Hashtag]]
-
+  def getTop10Tweets : Future[Seq[Tweet]]
   /**
     *   Hashtag Table
     * */
   def insertHashtag (hashtag: Hashtag): Future[Int]
   def checkHashtag(hashtag: String) : Future[Option[Hashtag]]
+  def getHashtagByID (hashtagID: Int) : Future[Hashtag]
 
   /**
     *   Location Table
