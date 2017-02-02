@@ -215,3 +215,9 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 6 s, completed Feb 2, 2017 4:38:06 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@beeada4, check cycles: false
+Total time: 0 s, completed Feb 2, 2017 4:38:14 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
