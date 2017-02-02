@@ -10,6 +10,7 @@ We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 33538
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
+<<<<<<< HEAD
 Taking next connection to: 33538
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
@@ -146,3 +147,6 @@ Taking next connection to: 33538
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 33538
+=======
+Taking next connection to: 41956
+>>>>>>> developmentFurkan2

@@ -47,8 +47,8 @@ Seq[Any](format.raw/*1.4*/("""
 object settingsPage extends settingsPage_Scope0.settingsPage
               /*
                   -- GENERATED --
-                  DATE: Wed Feb 01 21:15:45 CET 2017
-                  SOURCE: /home/orkun/Workspace/DatabaseProject/app/views/settingsPage.scala.html
+                  DATE: Wed Feb 01 22:49:50 CET 2017
+                  SOURCE: /home/furkan/Desktop/DatabaseProject/app/views/settingsPage.scala.html
                   HASH: b787619583f006a11936d64de5c6356cc43bd7bd
                   MATRIX: 534->1|630->3|658->5|723->44|737->50|800->93
                   LINES: 20->1|25->1|27->3|27->3|27->3|27->3

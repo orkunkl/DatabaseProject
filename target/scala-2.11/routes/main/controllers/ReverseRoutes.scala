@@ -1,7 +1,12 @@
 
 // @GENERATOR:play-routes-compiler
+<<<<<<< HEAD
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
 // @DATE:Wed Feb 01 22:46:38 CET 2017
+=======
+// @SOURCE:/home/furkan/Desktop/DatabaseProject/conf/routes
+// @DATE:Wed Feb 01 19:33:40 CET 2017
+>>>>>>> developmentFurkan2
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -19,7 +24,7 @@ package controllers {
     }
 
   
-    // @LINE:26
+    // @LINE:22
     def likeTweet(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "likeTweet")
@@ -31,28 +36,22 @@ package controllers {
       Call("GET", _prefix)
     }
   
-    // @LINE:24
+    // @LINE:20
     def postTweet(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "posttweet")
     }
   
-    // @LINE:22
-    def showSettings(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "showsettings")
-    }
-  
   }
 
-  // @LINE:32
+  // @LINE:28
   class ReverseWebJarAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:32
+    // @LINE:28
     def at(file:String): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "webjars/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -73,18 +72,6 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "signin")
     }
   
-    // @LINE:20
-    def deleteAccount(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "deleteaccount")
-    }
-  
-    // @LINE:12
-    def logOut(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "logout")
-    }
-  
     // @LINE:18
     def logInUser(): Call = {
       import ReverseRouteContext.empty
@@ -97,16 +84,22 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "authenticate")
     }
   
+    // @LINE:12
+    def logOut(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "logout")
+    }
+  
   }
 
-  // @LINE:29
+  // @LINE:25
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:29
+    // @LINE:25
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))

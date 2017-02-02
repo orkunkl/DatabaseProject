@@ -1,7 +1,12 @@
 
 // @GENERATOR:play-routes-compiler
+<<<<<<< HEAD
 // @SOURCE:/home/orkun/Workspace/DatabaseProject/conf/routes
 // @DATE:Wed Feb 01 22:46:38 CET 2017
+=======
+// @SOURCE:/home/furkan/Desktop/DatabaseProject/conf/routes
+// @DATE:Wed Feb 01 19:33:40 CET 2017
+>>>>>>> developmentFurkan2
 
 package router
 
@@ -19,9 +24,9 @@ class Routes(
   PageController_2: controllers.PageController,
   // @LINE:12
   UserAuthenticationController_1: controllers.UserAuthenticationController,
-  // @LINE:29
+  // @LINE:25
   Assets_3: controllers.Assets,
-  // @LINE:32
+  // @LINE:28
   WebJarAssets_0: controllers.WebJarAssets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -32,9 +37,9 @@ class Routes(
     PageController_2: controllers.PageController,
     // @LINE:12
     UserAuthenticationController_1: controllers.UserAuthenticationController,
-    // @LINE:29
+    // @LINE:25
     Assets_3: controllers.Assets,
-    // @LINE:32
+    // @LINE:28
     WebJarAssets_0: controllers.WebJarAssets
   ) = this(errorHandler, PageController_2, UserAuthenticationController_1, Assets_3, WebJarAssets_0, "/")
 
@@ -55,8 +60,6 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authenticate""", """controllers.UserAuthenticationController.authenticatePage"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signin""", """controllers.UserAuthenticationController.signInNewUser"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UserAuthenticationController.logInUser"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """deleteaccount""", """controllers.UserAuthenticationController.deleteAccount"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """showsettings""", """controllers.PageController.showSettings"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """posttweet""", """controllers.PageController.postTweet"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """likeTweet""", """controllers.PageController.likeTweet"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
@@ -154,44 +157,10 @@ class Routes(
   )
 
   // @LINE:20
-  private[this] lazy val controllers_UserAuthenticationController_deleteAccount5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteaccount")))
-  )
-  private[this] lazy val controllers_UserAuthenticationController_deleteAccount5_invoker = createInvoker(
-    UserAuthenticationController_1.deleteAccount,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.UserAuthenticationController",
-      "deleteAccount",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """deleteaccount"""
-    )
-  )
-
-  // @LINE:22
-  private[this] lazy val controllers_PageController_showSettings6_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("showsettings")))
-  )
-  private[this] lazy val controllers_PageController_showSettings6_invoker = createInvoker(
-    PageController_2.showSettings,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.PageController",
-      "showSettings",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """showsettings"""
-    )
-  )
-
-  // @LINE:24
-  private[this] lazy val controllers_PageController_postTweet7_route = Route("POST",
+  private[this] lazy val controllers_PageController_postTweet5_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("posttweet")))
   )
-  private[this] lazy val controllers_PageController_postTweet7_invoker = createInvoker(
+  private[this] lazy val controllers_PageController_postTweet5_invoker = createInvoker(
     PageController_2.postTweet,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -204,11 +173,11 @@ class Routes(
     )
   )
 
-  // @LINE:26
-  private[this] lazy val controllers_PageController_likeTweet8_route = Route("POST",
+  // @LINE:22
+  private[this] lazy val controllers_PageController_likeTweet6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("likeTweet")))
   )
-  private[this] lazy val controllers_PageController_likeTweet8_invoker = createInvoker(
+  private[this] lazy val controllers_PageController_likeTweet6_invoker = createInvoker(
     PageController_2.likeTweet,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -221,11 +190,11 @@ class Routes(
     )
   )
 
-  // @LINE:29
-  private[this] lazy val controllers_Assets_versioned9_route = Route("GET",
+  // @LINE:25
+  private[this] lazy val controllers_Assets_versioned7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned9_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned7_invoker = createInvoker(
     Assets_3.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -238,11 +207,11 @@ class Routes(
     )
   )
 
-  // @LINE:32
-  private[this] lazy val controllers_WebJarAssets_at10_route = Route("GET",
+  // @LINE:28
+  private[this] lazy val controllers_WebJarAssets_at8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("webjars/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_WebJarAssets_at10_invoker = createInvoker(
+  private[this] lazy val controllers_WebJarAssets_at8_invoker = createInvoker(
     WebJarAssets_0.at(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -289,39 +258,27 @@ class Routes(
       }
   
     // @LINE:20
-    case controllers_UserAuthenticationController_deleteAccount5_route(params) =>
+    case controllers_PageController_postTweet5_route(params) =>
       call { 
-        controllers_UserAuthenticationController_deleteAccount5_invoker.call(UserAuthenticationController_1.deleteAccount)
+        controllers_PageController_postTweet5_invoker.call(PageController_2.postTweet)
       }
   
     // @LINE:22
-    case controllers_PageController_showSettings6_route(params) =>
+    case controllers_PageController_likeTweet6_route(params) =>
       call { 
-        controllers_PageController_showSettings6_invoker.call(PageController_2.showSettings)
+        controllers_PageController_likeTweet6_invoker.call(PageController_2.likeTweet)
       }
   
-    // @LINE:24
-    case controllers_PageController_postTweet7_route(params) =>
-      call { 
-        controllers_PageController_postTweet7_invoker.call(PageController_2.postTweet)
-      }
-  
-    // @LINE:26
-    case controllers_PageController_likeTweet8_route(params) =>
-      call { 
-        controllers_PageController_likeTweet8_invoker.call(PageController_2.likeTweet)
-      }
-  
-    // @LINE:29
-    case controllers_Assets_versioned9_route(params) =>
+    // @LINE:25
+    case controllers_Assets_versioned7_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned9_invoker.call(Assets_3.versioned(path, file))
+        controllers_Assets_versioned7_invoker.call(Assets_3.versioned(path, file))
       }
   
-    // @LINE:32
-    case controllers_WebJarAssets_at10_route(params) =>
+    // @LINE:28
+    case controllers_WebJarAssets_at8_route(params) =>
       call(params.fromPath[String]("file", None)) { (file) =>
-        controllers_WebJarAssets_at10_invoker.call(WebJarAssets_0.at(file))
+        controllers_WebJarAssets_at8_invoker.call(WebJarAssets_0.at(file))
       }
   }
 }

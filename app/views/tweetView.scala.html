@@ -2,21 +2,21 @@
 @(tweet: Tweet)
 
 
-    <div>
+    <div class="row">
         <label class="col-sm-2 control-label">Account Name</label>
         <div class="col-sm-10">
                 @tweet.tweetOwnerName
         </div>
     </div>
 
-    <div>
+    <div class="row">
         <label class="col-sm-2 control-label">Tweet</label>
         <div class="col-sm-10">
                 @tweet.tweetText
         </div>
     </div>
 
-    <form class="form-horizontal">
+    <form class="form-horizontal" class="row">
 
         <input type="hidden" name="accountID" value="@tweet.tweetOwnerID">
         <input type="hidden" name="tweetID" value="@tweet.tweetID">
@@ -28,7 +28,7 @@
         </div>
     </form>
 
-    <form class="form-horizontal">
+    <form class="form-horizontal" class="row">
 
         <input type="hidden" name="accountID" value="@tweet.tweetOwnerID">
         <input type="hidden" name="tweetID" value="@tweet.tweetID">
